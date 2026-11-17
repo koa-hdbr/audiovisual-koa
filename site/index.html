@@ -1,882 +1,741 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>KOA Audiovisual — Produção Audiovisual em Santa Catarina</title>
-<meta name="description" content="Produção audiovisual em Santa Catarina. Vídeos institucionais, conteúdo para redes e campanhas publicitárias que fazem sua marca ser lembrada." />
-<meta name="robots" content="index, follow" />
-<meta name="theme-color" content="#0a0a0a" />
-<link rel="canonical" href="https://audiovisual.koaworld.org/" />
-
-<!-- Open Graph -->
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="KOA Audiovisual" />
-<meta property="og:locale" content="pt_BR" />
-<meta property="og:url" content="https://audiovisual.koaworld.org/" />
-<meta property="og:title" content="KOA Audiovisual — Produção Audiovisual em Santa Catarina" />
-<meta property="og:description" content="Produção audiovisual em Santa Catarina. Vídeos institucionais, conteúdo para redes e campanhas publicitárias que fazem sua marca ser lembrada." />
-<meta property="og:image" content="https://audiovisual.koaworld.org/koa-logo.webp" />
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="KOA Audiovisual — Produção Audiovisual em Santa Catarina" />
-<meta name="twitter:description" content="Produção audiovisual em Santa Catarina. Vídeos institucionais, conteúdo para redes e campanhas publicitárias que fazem sua marca ser lembrada." />
-<meta name="twitter:image" content="https://audiovisual.koaworld.org/koa-logo.webp" />
-
-<link rel="icon" type="image/png" href="favicon.png" />
-<link rel="apple-touch-icon" href="favicon.png" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KOA Audiovisual — A Inteligência do Sentir</title>
+<meta name="description" content="Produtora audiovisual em Santa Catarina. Filmes institucionais, publicidade, empreendimentos, videoclipes e eventos, com storytelling e olhar de cinema.">
+<link rel="canonical" href="https://audiovisual.koaworld.org/">
+<meta name="theme-color" content="#0b0a09">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="288x288" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="KOA Audiovisual">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:url" content="https://audiovisual.koaworld.org/">
+<meta property="og:title" content="KOA Audiovisual — A Inteligência do Sentir">
+<meta property="og:description" content="Filmes para projetos que querem conectar e ser lembrados muito além da tela.">
+<meta property="og:image" content="https://audiovisual.koaworld.org/og-image.jpg">
+<meta property="og:image:secure_url" content="https://audiovisual.koaworld.org/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="KOA Audiovisual — A Inteligência do Sentir">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="KOA Audiovisual — A Inteligência do Sentir">
+<meta name="twitter:description" content="Filmes para projetos que querem conectar e ser lembrados muito além da tela.">
+<meta name="twitter:image" content="https://audiovisual.koaworld.org/og-image.jpg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap">
 <style>
-  :root {
-    --bg: #0a0a0a;
-    --bg-soft: #111111;
-    --bg-card: #141414;
-    --fg: #f4f4f4;
-    --fg-dim: #b0b0b0;
-    --muted: #7a7a7a;
-    --accent: #ffffff;
-    --border: rgba(255,255,255,.08);
-    --border-hover: rgba(255,255,255,.18);
-    --radius: 3px;
-    --gap: 6px;
-    --nav-h: 72px;
-    --section-pad: clamp(80px, 10vw, 140px);
-    --side-pad: clamp(20px, 5vw, 80px);
-  }
+/* v4 — mobile primeiro. Sala de cinema (topo) + cartela de filme (destaques) + ritmo de landing page. Motion "respira". */
+:root{--p:#0b0a09;--p2:#12100e;--b:#fff2e0;--b2:#cdbfa9;--b3:#8a8172;--l:rgba(255,242,224,.12);--ambar:#c8925a;--rec:#d9584a;
+  --disp:"Bellota Text",Georgia,serif;--txt:Inter,system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace;color-scheme:dark}
+*{box-sizing:border-box}html,body{margin:0;background:#050505;color:var(--b);font-family:var(--txt)}
+img,video{display:block;width:100%;height:100%;object-fit:cover}
+button{font-family:inherit}
+/* barra de revisão (não faz parte do site) */
+.rev{position:sticky;top:0;z-index:100;display:flex;gap:8px;align-items:center;justify-content:center;flex-wrap:wrap;padding:10px;background:#1b1b1b;font:12px var(--txt);color:#aaa;border-bottom:1px solid #333}
+.rev button{font:600 12px var(--txt);padding:7px 14px;border-radius:999px;border:1px solid #444;background:transparent;color:#ddd;cursor:pointer}
+.rev button.on{background:#fff2e0;color:#111;border-color:#fff2e0}
+.stage{container-type:inline-size;position:relative;margin:0 auto;background:var(--p);overflow:hidden;overflow:clip;transition:max-width .3s;animation:abre 1.2s ease-out both}
+.stage.cel{max-width:390px;margin-block:24px;border-radius:28px;outline:8px solid #1d1d1d}
+@keyframes abre{from{opacity:0;filter:brightness(0)}to{opacity:1;filter:none}}
 
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-  body {
-    background: var(--bg);
-    color: var(--fg);
-    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    line-height: 1.6;
-  }
-  a { color: inherit; text-decoration: none; }
-  img { display: block; max-width: 100%; }
+/* grão de filme (mais lento que na v3, pesa menos no celular) */
+.grain{position:absolute;inset:-50%;z-index:60;pointer-events:none;opacity:.18;mix-blend-mode:overlay;animation:grao 1.6s steps(4) infinite;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+@keyframes grao{0%{transform:translate(0,0)}25%{transform:translate(-3%,2%)}50%{transform:translate(2%,-3%)}75%{transform:translate(-2%,-1%)}100%{transform:translate(0,0)}}
 
-  /* ========== NAV ========== */
-  nav.topnav {
-    position: fixed; top: 0; left: 0; right: 0;
-    height: var(--nav-h);
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 0 var(--side-pad);
-    background: rgba(10,10,10,.85);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    border-bottom: 1px solid var(--border);
-    z-index: 100;
-  }
-  .nav-brand { display: flex; align-items: center; gap: 10px; }
-  .nav-brand img { height: 38px; width: auto; }
-  .nav-brand span {
-    font-size: 11px; letter-spacing: .35em; text-transform: uppercase;
-    color: var(--muted); font-weight: 500;
-  }
-  .nav-links { display: flex; gap: 32px; align-items: center; }
-  .nav-links a {
-    font-size: 13px; letter-spacing: .08em; color: var(--fg-dim);
-    transition: color .2s;
-  }
-  .nav-links a:hover { color: #fff; }
-  .nav-links .nav-cta {
-    padding: 9px 22px;
-    border: 1px solid var(--border-hover);
-    border-radius: 2px;
-    font-size: 12px; letter-spacing: .12em; text-transform: uppercase;
-    color: #fff;
-    transition: background .2s, border-color .2s;
-  }
-  .nav-links .nav-cta:hover { background: rgba(255,255,255,.08); border-color: #fff; }
+/* tipografia de cartela: Bellota bold em versalete com brilho, como nas capas KOA */
+.tt{font-family:var(--disp);font-weight:700;font-variant-caps:small-caps;letter-spacing:.01em;line-height:.98;color:var(--b);
+  text-shadow:0 0 14px rgba(255,242,224,.28),0 0 40px rgba(255,242,224,.12);margin:0;text-wrap:balance}
+.kick{font-family:var(--disp);font-weight:300;text-transform:uppercase;letter-spacing:.09em;font-size:13px;color:var(--b2)}
+.lbl{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--b3)}
+.pill{display:inline-flex;align-items:center;gap:7px;font-size:11px;color:var(--b2);background:rgba(255,242,224,.06);border:1px solid var(--l);padding:5px 11px;border-radius:999px;backdrop-filter:blur(6px)}
+.pill i{width:6px;height:6px;border-radius:50%;background:var(--ambar);box-shadow:0 0 8px var(--ambar)}
+p{line-height:1.65}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 14px var(--txt);padding:14px 20px;border-radius:999px;text-decoration:none;cursor:pointer;border:0}
+.btn.cheio{background:var(--b);color:var(--p)}.btn.vazio{border:1px solid var(--l);color:var(--b);background:rgba(255,242,224,.05)}
 
-  /* mobile hamburger */
-  .hamburger { display: none; background: none; border: 0; color: #fff; cursor: pointer; padding: 8px; }
-  .hamburger svg { width: 24px; height: 24px; }
+/* ===== MOTION ===== */
+/* títulos se formam a partir do blur, como foco de lente */
+.foco{opacity:0;filter:blur(12px);letter-spacing:.14em;transform:translateX(-10px);
+  transition:opacity .9s ease-out,filter .9s cubic-bezier(.2,.7,.2,1),letter-spacing 1.1s cubic-bezier(.2,.7,.2,1),transform .9s ease-out}
+.foco.in{opacity:1;filter:blur(0);letter-spacing:.01em;transform:none}
+/* título do topo "acende" como projetor */
+.hero .tt.foco.in{animation:projetor 2.4s ease-out both}
+@keyframes projetor{0%{text-shadow:0 0 0 rgba(255,242,224,0)}35%{text-shadow:0 0 22px rgba(255,242,224,.55),0 0 70px rgba(255,242,224,.25)}100%{text-shadow:0 0 14px rgba(255,242,224,.28),0 0 40px rgba(255,242,224,.12)}}
+/* frases entram como legenda */
+.ln{opacity:0;transform:translateY(8px);transition:opacity .8s ease-out,transform .8s ease-out}
+.ln.in{opacity:1;transform:none}
+/* troca de aba: chicote de câmera (whip pan) */
+.painel.sai{animation:whipSai .24s ease-in forwards}
+.painel.entra{animation:whipEntra .42s cubic-bezier(.2,.7,.2,1) both}
+@keyframes whipSai{to{opacity:0;filter:blur(14px);transform:translateX(-48px)}}
+@keyframes whipEntra{from{opacity:0;filter:blur(14px);transform:translateX(48px)}to{opacity:1;filter:none;transform:none}}
 
-  @media (max-width: 768px) {
-    .nav-links { display: none; }
-    .nav-links.open {
-      display: flex; flex-direction: column;
-      position: fixed; top: var(--nav-h); left: 0; right: 0; bottom: 0;
-      background: rgba(10,10,10,.97);
-      padding: 40px 24px;
-      gap: 28px;
-    }
-    .nav-links.open a { font-size: 18px; }
-    .hamburger { display: block; }
-  }
+/* NAV */
+.nav{position:absolute;top:0;left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:18px 20px}
+.logo{font-family:var(--disp);font-weight:700;font-size:20px;letter-spacing:.14em}
+.logo small{display:block;font-family:var(--txt);font-weight:400;font-size:8px;letter-spacing:.32em;color:var(--b3);margin-top:-2px}
+.menu{width:40px;height:40px;border-radius:50%;border:1px solid var(--l);display:grid;place-items:center;background:rgba(15,15,15,.4)}
+.menu span{width:14px;height:1px;background:var(--b);box-shadow:0 5px 0 var(--b)}
+.links{display:none}
 
-  /* ========== SECTIONS ========== */
-  section { padding: var(--section-pad) var(--side-pad); }
+/* HERO — sala de cinema */
+.hero{position:relative;min-height:660px;display:flex;flex-direction:column;justify-content:flex-end;padding:0 20px 64px}
+.hero .bg{position:absolute;inset:0;filter:saturate(.8) brightness(.55) contrast(1.08);overflow:hidden}
+.hero .bg img,.hero .bg video{object-position:62% 50%;animation:zoom 20s ease-in-out infinite alternate}
+@keyframes zoom{from{transform:scale(1)}to{transform:scale(1.06)}}
+.hero .vin{position:absolute;inset:0;background:radial-gradient(130% 80% at 50% 45%,transparent 25%,rgba(8,7,6,.9) 100%),linear-gradient(180deg,rgba(11,10,9,.6),transparent 25%,transparent 45%,var(--p) 96%)}
+.hero .leak{position:absolute;right:-140px;top:-60px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(200,146,90,.35),transparent 65%);animation:pulsa 9s ease-in-out infinite}
+@keyframes pulsa{0%,100%{opacity:.65;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
+.bar{position:absolute;left:0;right:0;height:14px;background:#000;z-index:2}.bar.t{top:0}.bar.b{bottom:0}
+.hero .txt{position:relative;z-index:3;display:grid;gap:14px}
+.hero .tt{font-size:52px}
+.hero p{margin:0;color:var(--b2);font-size:15.5px;max-width:32ch}
+.hero .ctas{display:grid;gap:10px;margin-top:8px}
+.rec{position:absolute;top:84px;right:20px;z-index:3;font:10px var(--mono);color:var(--b3);letter-spacing:.1em;text-align:right;line-height:1.7}
+.rec b{color:var(--rec);font-weight:400;animation:pisca 1.4s steps(2) infinite}
+@keyframes pisca{50%{opacity:.2}}
 
-  .tag {
-    display: inline-block;
-    font-size: 11px; letter-spacing: .4em; text-transform: uppercase;
-    color: var(--muted); font-weight: 500;
-    margin-bottom: 20px;
-  }
+/* faixa de clientes */
+.cli{padding:26px 20px;border-block:1px solid var(--l);display:grid;gap:14px}
+.cli .ns{display:flex;flex-wrap:wrap;gap:10px 26px;font-family:var(--disp);font-weight:700;font-variant-caps:small-caps;font-size:17px;color:var(--b3)}
 
-  /* ========== HERO ========== */
-  .hero {
-    min-height: 100vh;
-    display: flex; flex-direction: column; justify-content: center;
-    padding-top: calc(var(--nav-h) + 60px);
-    padding-bottom: 60px;
-    max-width: 820px;
-  }
-  .hero h1 {
-    font-size: clamp(36px, 5.5vw, 72px);
-    font-weight: 300;
-    line-height: 1.1;
-    letter-spacing: -.025em;
-    margin-bottom: 28px;
-  }
-  .hero h1 strong { font-weight: 600; }
-  .hero .sub {
-    font-size: clamp(16px, 1.8vw, 20px);
-    color: var(--fg-dim);
-    line-height: 1.65;
-    max-width: 580px;
-    margin-bottom: 44px;
-  }
-  .hero .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+/* manifesto */
+.man{position:relative;padding:80px 20px 60px}
+.man .glow{position:absolute;left:-30%;top:20px;width:120%;height:340px;background:radial-gradient(ellipse,rgba(200,146,90,.12),transparent 70%)}
+.man .tt{font-size:40px;margin:14px 0 22px;position:relative}
+.man .corpo{display:grid;gap:16px;color:var(--b2);font-size:16px;position:relative;max-width:60ch}
+.man .corpo p{margin:0}
+.man .corpo strong{color:var(--b);font-weight:500}
+.leg{margin:36px auto 0;max-width:30ch;text-align:center;font-size:15px;color:var(--b);background:rgba(0,0,0,.55);padding:6px 10px;line-height:1.5;position:relative}
 
-  /* buttons */
-  .btn {
-    display: inline-flex; align-items: center; gap: 10px;
-    padding: 14px 28px;
-    font-size: 13px; letter-spacing: .14em; text-transform: uppercase;
-    font-family: inherit; font-weight: 500;
-    border: 1px solid var(--border-hover);
-    background: transparent; color: #fff;
-    cursor: pointer;
-    transition: background .2s, border-color .2s, transform .15s;
-    border-radius: 2px;
-  }
-  .btn:hover { border-color: #fff; transform: translateY(-1px); }
-  .btn.primary { background: #fff; color: #0a0a0a; border-color: #fff; }
-  .btn.primary:hover { background: #e6e6e6; }
-  .btn svg { width: 16px; height: 16px; flex-shrink: 0; }
+/* dois eixos */
+.eixos{display:grid;gap:12px;padding:0 20px 18px}
+.pc{position:relative;border:1px solid var(--l);border-radius:14px;padding:24px 22px;background:linear-gradient(160deg,rgba(255,242,224,.05),rgba(255,242,224,.01));overflow:hidden}
+.pc .n{font:10px var(--mono);color:var(--ambar);letter-spacing:.16em}
+.pc h3{font-family:var(--disp);font-weight:700;font-variant-caps:small-caps;font-size:28px;margin:10px 0 10px;text-shadow:0 0 18px rgba(255,242,224,.18)}
+.pc p{margin:0;color:var(--b2);font-size:14.5px}
+.oficio{margin:0 20px 70px;padding:14px 0;border-top:1px solid var(--l);display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline;font-size:13px;color:var(--b2)}
+.oficio .lbl{color:var(--ambar)}
 
-  /* ========== PORTFÓLIO ========== */
-  .portfolio { background: var(--bg); }
-  .portfolio h2 {
-    font-size: clamp(28px, 3.5vw, 48px);
-    font-weight: 300; letter-spacing: -.02em;
-    margin-bottom: 48px;
-  }
-  .portfolio-grid {
-    width: 100%; aspect-ratio: 12/10;
-    display: grid;
-    gap: var(--gap);
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    transition: grid-template-rows .5s cubic-bezier(.2,.7,.2,1),
-                grid-template-columns .5s cubic-bezier(.2,.7,.2,1);
-  }
-  .cell {
-    position: relative; overflow: hidden;
-    background: var(--bg-soft); border-radius: var(--radius);
-    cursor: pointer; isolation: isolate;
-  }
-  .cell iframe, .cell video {
-    position: absolute; inset: 0;
-    width: 100%; height: 100%; border: 0;
-    pointer-events: none;
-    transform: scale(1.05);
-    transition: transform .6s cubic-bezier(.2,.7,.2,1), filter .4s ease;
-    filter: saturate(.85) brightness(.78);
-  }
-  .cell::after {
-    content: ""; position: absolute; inset: 0;
-    background: linear-gradient(180deg, rgba(0,0,0,.05) 0%, rgba(0,0,0,.55) 100%);
-    transition: opacity .3s ease;
-    pointer-events: none;
-  }
-  .cell .label {
-    position: absolute; left: 16px; bottom: 14px; z-index: 2;
-    pointer-events: none;
-    transform: translateY(4px);
-    transition: transform .4s ease, opacity .3s ease;
-  }
-  .cell .label .title {
-    font-size: 13px; letter-spacing: .04em;
-    font-weight: 600; color: #fff;
-  }
-  .cell .label .cat {
-    font-size: 10px; letter-spacing: .3em; text-transform: uppercase;
-    color: rgba(255,255,255,.6); margin-top: 3px;
-  }
-  .cell:hover iframe, .cell:hover video {
-    transform: scale(1.08);
-    filter: saturate(1) brightness(1);
-  }
-  .cell:hover::after { opacity: .3; }
-  .cell:hover .label { transform: translateY(0); }
+/* portfólio */
+.port{position:relative;padding:20px 0 70px}
+.port .head{padding:0 20px;display:grid;gap:12px}
+.port .tt{font-size:42px}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:22px 20px 18px;scrollbar-width:none;scroll-snap-type:x proximity}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:0 0 auto;scroll-snap-align:start;font:500 13px var(--txt);color:var(--b2);background:rgba(255,242,224,.04);border:1px solid var(--l);padding:9px 15px;border-radius:999px;cursor:pointer;transition:background .3s,color .3s}
+.tabs button.on{background:var(--b);color:var(--p);border-color:var(--b)}
+.painel{padding:0 20px;display:grid;gap:14px}.painel[hidden]{display:none}
+.intro{margin:0 0 2px;color:var(--b2);font-size:14px}
+.feat{position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--l)}
+.feat .amb{position:absolute;inset:-60px;width:calc(100% + 120px);height:calc(100% + 120px);filter:blur(55px) saturate(1.3) brightness(.42)}
+.feat .in{position:relative;display:grid;gap:18px;padding:14px 14px 20px}
+.scr{position:relative;aspect-ratio:16/9;border-radius:8px;overflow:hidden;box-shadow:0 30px 60px -20px rgba(0,0,0,.85);cursor:pointer;background:#000}
+.scr .pl,.card .pl{position:absolute;left:12px;bottom:12px;width:44px;height:44px;border-radius:50%;background:rgba(255,242,224,.92);color:var(--p);display:grid;place-items:center;font-size:12px;padding-left:2px;z-index:2}
+.scr .prev{position:absolute;top:10px;right:10px;z-index:2;font:9.5px var(--mono);letter-spacing:.14em;color:var(--b2);background:rgba(0,0,0,.45);padding:4px 8px;border-radius:4px}
+.feat h3{font-family:var(--disp);font-weight:700;font-variant-caps:small-caps;font-size:30px;margin:6px 0 4px;text-shadow:0 0 18px rgba(255,242,224,.2)}
+.feat .lg{margin:0 0 14px;color:var(--b2);font-size:14px}
+.ficha{font-size:12px;border-top:1px solid var(--l)}
+.ficha div{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px dotted rgba(255,242,224,.12)}
+.ficha span:first-child{font:10px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--b3);padding-top:2px}
+.ficha span:last-child{text-align:right}
+.grid{display:grid;gap:12px}
+.card{position:relative;aspect-ratio:16/10;border-radius:12px;overflow:hidden;border:1px solid var(--l);cursor:pointer;background:#000}
+.card img{filter:brightness(.8);transition:transform .9s cubic-bezier(.2,.7,.2,1),filter .9s}
+.card:hover img,.card:focus-visible img{transform:scale(1.05);filter:brightness(1)}
+.card .pl{left:auto;right:12px;top:12px;bottom:auto;width:34px;height:34px;font-size:10px;opacity:0;transition:opacity .4s}
+.card:hover .pl{opacity:1}
+.card .cap{position:absolute;inset:auto 0 0;padding:40px 14px 12px;background:linear-gradient(transparent,rgba(8,8,8,.92))}
+.card .cap b{display:block;font-family:var(--disp);font-weight:700;font-variant-caps:small-caps;font-size:19px}
+.card .cap small{font-size:11.5px;color:var(--b2)}
+.card .tag{position:absolute;top:10px;left:10px;z-index:2}
+.tag.dia i{background:var(--rec);box-shadow:0 0 8px var(--rec)}
 
-  @media (max-width: 768px) {
-    .portfolio-grid {
-      aspect-ratio: auto;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(12, 56vw);
-      transition: none;
-    }
-  }
+/* faixa construtoras */
+.obra{position:relative;margin:0 20px 70px;border-radius:18px;overflow:hidden;border:1px solid var(--l)}
+.obra .bg{position:absolute;inset:0;filter:brightness(.32) saturate(.8)}
+.obra .in{position:relative;padding:34px 22px;display:grid;gap:14px;background:linear-gradient(90deg,rgba(11,10,9,.9),rgba(11,10,9,.35))}
+.obra .tt{font-size:32px}
+.obra p{margin:0;color:var(--b2);font-size:15px;max-width:44ch}
+.obra .btn{justify-self:start}
 
-  /* ========== SERVIÇOS ========== */
-  .servicos { background: var(--bg-soft); }
-  .servicos h2 {
-    font-size: clamp(28px, 3.5vw, 48px);
-    font-weight: 300; letter-spacing: -.02em;
-    margin-bottom: 56px;
-  }
-  .servicos-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-  }
-  .servico-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 40px 32px;
-    display: flex; flex-direction: column;
-    transition: border-color .3s, transform .3s;
-  }
-  .servico-card:hover {
-    border-color: var(--border-hover);
-    transform: translateY(-3px);
-  }
-  .servico-num {
-    font-size: 12px; letter-spacing: .3em; color: var(--muted);
-    font-weight: 600; margin-bottom: 20px;
-  }
-  .servico-card h3 {
-    font-size: 22px; font-weight: 500;
-    line-height: 1.25; margin-bottom: 16px;
-  }
-  .servico-card p {
-    font-size: 15px; color: var(--fg-dim);
-    line-height: 1.65; flex: 1;
-    margin-bottom: 24px;
-  }
-  .servico-price {
-    font-size: 13px; letter-spacing: .08em;
-    color: var(--muted); font-weight: 500;
-    padding-top: 20px;
-    border-top: 1px solid var(--border);
-  }
+/* processo de criação */
+.cria{position:relative;padding:70px 20px}
+.cria .film{position:relative;aspect-ratio:2.39/1;border-radius:6px;overflow:hidden;margin:24px 0 22px;cursor:pointer}
+.cria .film img{filter:brightness(.7) saturate(.85)}
+.cria .film::before,.cria .film::after{content:"";position:absolute;left:0;right:0;height:10px;z-index:1;background:repeating-linear-gradient(90deg,#000 0 10px,transparent 10px 18px),#111;opacity:.9}
+.cria .film::before{top:0}.cria .film::after{bottom:0}
+.cria .tt{font-size:40px;margin-top:12px}
+.cria p{color:var(--b2);font-size:15.5px;margin:0 0 14px;max-width:60ch}
 
-  @media (max-width: 900px) {
-    .servicos-grid { grid-template-columns: 1fr; }
-  }
+/* processo de produção — linha do tempo que se desenha, com cursor de edição */
+.prod{padding:30px 20px 70px}
+.prod .tt{font-size:38px;margin:12px 0 26px}
+.etapas{position:relative;display:grid;margin-left:6px;padding-left:0}
+.etapas .trilho,.etapas .feito{position:absolute;left:0;top:0;bottom:0;width:1px;background:var(--l)}
+.etapas .feito{background:var(--ambar);transform:scaleY(0);transform-origin:top;transition:transform 2.4s cubic-bezier(.4,0,.2,1)}
+.etapas .cursor{position:absolute;left:-6px;top:0;width:13px;height:2px;background:var(--rec);box-shadow:0 0 10px var(--rec);opacity:0}
+.etapas.in .feito{transform:scaleY(1)}
+.etapas.in .cursor{animation:cursorV 2.4s cubic-bezier(.4,0,.2,1) forwards}
+@keyframes cursorV{0%{top:0;opacity:1}90%{opacity:1}100%{top:100%;opacity:0}}
+.et{position:relative;padding:0 0 26px 24px;opacity:.35;transition:opacity .6s}
+.et::before{content:"";position:absolute;left:-4px;top:5px;width:9px;height:9px;border-radius:50%;background:var(--p);border:1px solid var(--ambar);transition:background .5s,box-shadow .5s}
+.etapas.in .et{opacity:1}
+.etapas.in .et::before{background:var(--ambar);box-shadow:0 0 10px var(--ambar)}
+.etapas.in .et:nth-of-type(1),.etapas.in .et:nth-of-type(1)::before{transition-delay:.1s}
+.etapas.in .et:nth-of-type(2),.etapas.in .et:nth-of-type(2)::before{transition-delay:.6s}
+.etapas.in .et:nth-of-type(3),.etapas.in .et:nth-of-type(3)::before{transition-delay:1.1s}
+.etapas.in .et:nth-of-type(4),.etapas.in .et:nth-of-type(4)::before{transition-delay:1.6s}
+.etapas.in .et:nth-of-type(5),.etapas.in .et:nth-of-type(5)::before{transition-delay:2.1s}
+.et .n{font:10px var(--mono);color:var(--ambar);letter-spacing:.16em}
+.et h4{font-family:var(--disp);font-weight:700;font-variant-caps:small-caps;font-size:21px;margin:4px 0 6px}
+.et p{margin:0;color:var(--b2);font-size:14px}
 
-  /* ========== DIFERENCIAIS ========== */
-  .diferenciais { background: var(--bg); }
-  .diferenciais h2 {
-    font-size: clamp(28px, 3.5vw, 48px);
-    font-weight: 300; letter-spacing: -.02em;
-    margin-bottom: 20px;
-  }
-  .dif-intro {
-    font-size: clamp(16px, 1.6vw, 19px);
-    color: var(--fg-dim);
-    line-height: 1.7;
-    max-width: 680px;
-    margin-bottom: 56px;
-  }
-  .dif-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-  }
-  .dif-item {
-    padding: 36px 28px;
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    transition: border-color .3s;
-  }
-  .dif-item:hover { border-color: var(--border-hover); }
-  .dif-item h3 {
-    font-size: 18px; font-weight: 600;
-    margin-bottom: 12px;
-  }
-  .dif-item p {
-    font-size: 15px; color: var(--fg-dim);
-    line-height: 1.65;
-  }
+/* parcerias */
+.parc{margin:0 20px 70px;border:1px solid var(--l);border-radius:18px;padding:28px 22px;position:relative;overflow:hidden;background:radial-gradient(120% 100% at 100% 0,rgba(200,146,90,.14),transparent 60%),var(--p2)}
+.parc .tt{font-size:34px;margin:12px 0 14px}
+.parc p{color:var(--b2);font-size:15px;margin:0 0 18px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{font-size:12.5px;border:1px solid var(--l);border-radius:999px;padding:6px 12px;color:var(--b)}
 
-  @media (max-width: 900px) {
-    .dif-grid { grid-template-columns: 1fr; }
-  }
+/* depoimento */
+.dep{padding:0 20px 70px;text-align:center}
+.dep blockquote{font-family:var(--disp);font-size:22px;line-height:1.35;margin:16px auto 14px;max-width:28ch}
+.dep cite{font-style:normal;font-size:12px;color:var(--b3)}
 
-  /* ========== DEPOIMENTOS ========== */
-  .depoimentos { background: var(--bg-soft); }
-  .depoimentos h2 {
-    font-size: clamp(28px, 3.5vw, 48px);
-    font-weight: 300; letter-spacing: -.02em;
-    margin-bottom: 48px;
-  }
-  .depoimentos-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-    margin-bottom: 40px;
-  }
-  .depo-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 36px 28px;
-    display: flex; flex-direction: column; gap: 16px;
-    transition: border-color .3s;
-  }
-  .depo-card:hover { border-color: var(--border-hover); }
-  .depo-quote-mark {
-    font-size: 48px; line-height: 1; color: rgba(255,255,255,.12);
-    font-family: Georgia, serif;
-  }
-  .depo-text {
-    font-size: 15px; color: var(--fg-dim);
-    line-height: 1.75; font-style: italic;
-  }
-  .depo-author-info { margin-top: auto; padding-top: 16px; border-top: 1px solid var(--border); }
-  .depo-author {
-    font-size: 14px; font-weight: 600; color: var(--fg);
-  }
-  .depo-role {
-    font-size: 12px; color: var(--muted); margin-top: 2px;
-  }
+/* convite final */
+.fim{position:relative;padding:90px 20px 70px;text-align:center;overflow:hidden}
+.fim .bg{position:absolute;inset:0;filter:blur(2px) brightness(.28) saturate(.7)}
+.fim .vin{position:absolute;inset:0;background:radial-gradient(80% 70% at 50% 50%,transparent,var(--p) 85%)}
+.fim .in{position:relative;display:grid;gap:16px;justify-items:center}
+.fim .tt{font-size:42px}
+.fim p{margin:0;color:var(--b2);max-width:34ch}
+.fim .ctas{display:grid;gap:10px;width:100%;max-width:340px;margin-top:6px}
+footer{padding:26px 20px 34px;border-top:1px solid var(--l);display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--b3)}
 
-  /* media testimonials */
-  .depo-media-section {
-    margin-top: 16px;
-  }
-  .depo-media-label {
-    font-size: 12px; letter-spacing: .3em; text-transform: uppercase;
-    color: var(--muted); font-weight: 500;
-    margin-bottom: 20px;
-  }
-  .depo-media-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-  }
-  .depo-media-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 24px;
-    transition: border-color .3s;
-  }
-  .depo-media-card:hover { border-color: var(--border-hover); }
-  .depo-media-card .media-label {
-    font-size: 13px; font-weight: 500; color: var(--fg);
-    margin-bottom: 14px;
-  }
-  .depo-media-card audio {
-    width: 100%; height: 40px;
-    border-radius: 4px;
-    filter: invert(1) hue-rotate(180deg) brightness(.85) contrast(1.1);
-  }
-  .depo-media-card video {
-    width: 100%; border-radius: 4px;
-    background: #000;
-  }
+/* player em tela cheia com barras de cinema */
+.player{position:fixed;inset:0;z-index:200;display:grid;place-items:center;background:rgba(0,0,0,0);transition:background .4s;pointer-events:none}
+.player.on{background:rgba(0,0,0,.94);pointer-events:auto}
+.player .cb{position:absolute;left:0;right:0;height:0;background:#000;transition:height .5s cubic-bezier(.2,.7,.2,1);z-index:1}
+.player .cb.t{top:0}.player .cb.b{bottom:0}
+.player.on .cb{height:9vh}
+.player .tela{position:relative;z-index:2;width:min(92vw,calc(78vh * 16 / 9));aspect-ratio:16/9;opacity:0;transform:scale(.97);transition:opacity .5s .2s,transform .6s .2s}
+.player.on .tela{opacity:1;transform:none}
+.player iframe{width:100%;height:100%;border:0;background:#000}
+.player .fecha{position:absolute;z-index:3;top:calc(9vh + 12px);right:16px;font:600 12px var(--txt);color:var(--b);background:rgba(255,242,224,.08);border:1px solid var(--l);border-radius:999px;padding:8px 14px;cursor:pointer;opacity:0;transition:opacity .4s .4s}
+.player.on .fecha{opacity:1}
+.player .nome{position:absolute;z-index:3;bottom:calc(9vh + 14px);left:0;right:0;text-align:center;font-family:var(--disp);font-weight:700;font-variant-caps:small-caps;font-size:18px;color:var(--b2);opacity:0;transition:opacity .4s .5s}
+.player.on .nome{opacity:1}
 
-  @media (max-width: 900px) {
-    .depoimentos-grid { grid-template-columns: 1fr; }
-  }
+/* COMPUTADOR */
+@container (min-width:760px){
+  .nav,.hero,.cli,.man,.eixos,.port .head,.tabs,.painel,.cria,.prod,.dep,.fim,footer{padding-inline:48px}
+  .parc,.obra,.oficio{margin-inline:48px}
+  .links{display:flex;gap:26px;align-items:center;font-size:13px;color:var(--b2)}
+  .menu{display:none}
+  .hero{min-height:740px;padding-bottom:90px}.hero .tt{font-size:92px}.hero p{font-size:18px;max-width:40ch}
+  .hero .ctas{display:flex}.bar{height:26px}.rec{right:48px;top:auto;bottom:60px}
+  .cli{grid-template-columns:auto 1fr;align-items:center;gap:40px}.cli .ns{justify-content:space-between}
+  .man{display:grid;grid-template-columns:1fr 1.1fr;gap:60px;padding-block:120px 80px}.man .tt{font-size:64px;margin-top:14px}
+  .man .leg{grid-column:1/-1}
+  .eixos{grid-template-columns:1fr 1fr;gap:16px}.pc{padding:34px 30px}.pc h3{font-size:36px}.pc p{font-size:15.5px}
+  .oficio{margin-bottom:100px}
+  .port .head{grid-template-columns:1fr 1fr;align-items:end}.port .tt{font-size:64px}
+  .feat .in{grid-template-columns:1.6fr 1fr;align-items:center;padding:24px;gap:32px}
+  .feat .scr{aspect-ratio:2.39/1}
+  .grid{grid-template-columns:repeat(3,1fr);gap:16px}
+  .obra .in{padding:56px 48px;grid-template-columns:1fr auto;align-items:end;column-gap:40px}.obra .tt{font-size:48px;grid-column:1}.obra p{grid-column:1}.obra .btn{grid-column:2;grid-row:1/4;align-self:end}
+  .cria{display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:center;padding-block:110px}.cria .film{margin:0;order:-1}.cria .tt{font-size:56px}
+  .prod .tt{font-size:56px}
+  .etapas{grid-template-columns:repeat(5,1fr);margin:0}
+  .etapas .trilho,.etapas .feito{top:0;bottom:auto;left:0;right:0;width:auto;height:1px}
+  .etapas .feito{transform:scaleX(0);transform-origin:left}
+  .etapas.in .feito{transform:scaleX(1)}
+  .etapas .cursor{left:0;top:-6px;width:2px;height:13px}
+  .etapas.in .cursor{animation-name:cursorH}
+  .et{padding:28px 18px 0 0}.et::before{left:0;top:-4px}
+  .parc{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:48px}.parc .tt{font-size:48px}
+  .dep blockquote{font-size:30px}
+  .fim{padding-block:140px 110px}.fim .tt{font-size:72px}.fim .ctas{display:flex;max-width:none;justify-content:center}
+}
+@keyframes cursorH{0%{left:0;opacity:1}90%{opacity:1}100%{left:100%;opacity:0}}
 
-  /* ========== CTA FINAL ========== */
-  .cta-final {
-    background: var(--bg);
-    text-align: center;
-    display: flex; flex-direction: column; align-items: center;
-  }
-  .cta-final h2 {
-    font-size: clamp(30px, 4vw, 56px);
-    font-weight: 300; letter-spacing: -.02em;
-    margin-bottom: 20px;
-  }
-  .cta-final .cta-sub {
-    font-size: clamp(16px, 1.6vw, 19px);
-    color: var(--fg-dim);
-    line-height: 1.65;
-    max-width: 520px;
-    margin-bottom: 40px;
-  }
-  .cta-final .cta-actions {
-    display: flex; gap: 14px; flex-wrap: wrap;
-    justify-content: center;
-  }
+/* ===== v4.1: mais respiro, luz de fundo, mais grão ===== */
+.stage{isolation:isolate;background:
+  radial-gradient(90% 60% at 50% 0,rgba(200,146,90,.10),transparent 70%),
+  linear-gradient(180deg,#0d0b09 0%,#0b0a09 30%,#0e0b09 55%,#0b0a09 80%,#0d0b0a 100%)}
+.luz{position:absolute;z-index:-1;width:130%;aspect-ratio:1;max-width:1100px;border-radius:50%;pointer-events:none;
+  background:radial-gradient(circle,rgba(200,146,90,.16),rgba(200,146,90,.05) 40%,transparent 68%);animation:respiraLuz 14s ease-in-out infinite}
+@keyframes respiraLuz{0%,100%{opacity:.7;transform:scale(1)}50%{opacity:1;transform:scale(1.07)}}
+.feixe{position:absolute;top:-10%;left:-20%;width:90%;height:120%;z-index:1;pointer-events:none;mix-blend-mode:screen;
+  background:conic-gradient(from 150deg at 0 0,transparent 0deg,rgba(255,226,180,.10) 12deg,rgba(255,226,180,.03) 24deg,transparent 34deg);animation:feixe 11s ease-in-out infinite}
+@keyframes feixe{0%,100%{opacity:.55}50%{opacity:1}}
+.grain{opacity:.3}
+.grain.g2{opacity:.16;mix-blend-mode:soft-light;animation:grao 1.1s steps(3) infinite reverse;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.42' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 .92  0 0 0 0 .8  0 0 0 1.2 -.1'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.poeira{position:absolute;inset:0;z-index:61;pointer-events:none;opacity:.5;mix-blend-mode:screen;animation:pisca2 .5s steps(2) infinite;
+  background-image:radial-gradient(1px 1px at 12% 18%,rgba(255,242,224,.6),transparent),radial-gradient(1.5px 1px at 78% 9%,rgba(255,242,224,.45),transparent),
+  radial-gradient(1px 2px at 41% 52%,rgba(255,242,224,.4),transparent),radial-gradient(1px 1px at 88% 71%,rgba(255,242,224,.5),transparent),radial-gradient(1px 1px at 23% 86%,rgba(255,242,224,.45),transparent);
+  background-size:100% 900px}
+@keyframes pisca2{0%{background-position:0 0}100%{background-position:37px 420px}}
+.sec-luz{position:relative}
+.port::before,.prod::before{content:"";position:absolute;inset:-60px -20% auto;height:420px;z-index:-1;background:radial-gradient(60% 60% at 50% 40%,rgba(200,146,90,.09),transparent 70%)}
+.prod{position:relative}
+.cria .film{box-shadow:0 0 80px -10px rgba(200,146,90,.35)}
+.cria .film .pl{left:14px;bottom:18px}
 
-  /* ========== FOOTER ========== */
-  footer {
-    padding: 40px var(--side-pad);
-    border-top: 1px solid var(--border);
-    display: flex; align-items: center; justify-content: space-between;
-    flex-wrap: wrap; gap: 16px;
-  }
-  footer .foot-brand { display: flex; align-items: center; gap: 8px; }
-  footer .foot-brand img { height: 28px; }
-  footer .foot-copy {
-    font-size: 12px; color: var(--muted); letter-spacing: .04em;
-  }
+.hero{overflow:hidden}.hero .txt{gap:18px}
+.cli{padding-block:36px}
+.man{padding-block:120px 96px}.man .tt{margin:18px 0 30px}.man .corpo{gap:22px}.leg{margin-top:48px}
+.eixos{gap:18px;padding-bottom:28px}.pc{padding:30px 24px}
+.oficio{margin-bottom:120px;padding-block:20px}
+.port{padding-block:30px 120px}.port .head{gap:18px}
+.tabs{padding-block:32px 28px}
+.painel{gap:24px}.grid{gap:18px}.intro{margin-bottom:6px}
+.feat .in{gap:24px;padding:18px 18px 26px}.feat .lg{margin-bottom:20px}
+.ficha div{padding:10px 0}
+.obra{margin-bottom:120px}.obra .in{padding:46px 24px;gap:18px}
+.cria{padding-block:120px}.cria .film{margin:30px 0 32px}.cria p{margin-bottom:18px}
+.prod{padding-block:50px 120px}.prod .tt{margin:16px 0 42px}.et{padding-bottom:38px}
+.parc{margin-bottom:120px;padding:40px 26px}.parc .tt{margin:16px 0 18px}.parc p{margin-bottom:26px}
+.dep{padding-bottom:120px}.dep blockquote{margin:22px auto 18px}
+.fim{padding-block:130px 100px}.fim .in{gap:20px}
+@container (min-width:760px){
+  .man{padding-block:180px 130px;gap:90px}
+  .eixos{gap:26px}.pc{padding:44px 40px}
+  .oficio{margin-bottom:170px}
+  .port{padding-block:40px 170px}.tabs{padding-block:40px 34px}
+  .painel{gap:30px}.grid{gap:26px}.feat .in{padding:32px;gap:48px}
+  .obra{margin-bottom:170px}.obra .in{padding:72px 56px}
+  .cria{padding-block:170px;gap:90px}
+  .prod{padding-block:60px 170px}.prod .tt{margin-bottom:56px}.et{padding:34px 26px 0 0}
+  .parc{margin-bottom:170px;padding:64px;gap:60px}
+  .dep{padding-bottom:170px}
+  .fim{padding-block:190px 150px}
+}
 
-  /* ========== VIDEO MODAL ========== */
-  .modal {
-    position: fixed; inset: 0;
-    background: rgba(0,0,0,.92);
-    display: none; align-items: center; justify-content: center;
-    z-index: 200; padding: 4vh 4vw;
-    backdrop-filter: blur(6px);
-  }
-  .modal.open { display: flex; }
-  .modal .stage {
-    position: relative; width: 100%; max-width: 1280px;
-    aspect-ratio: 16/9; background: #000;
-  }
-  .modal .stage iframe {
-    position: absolute; inset: 0;
-    width: 100%; height: 100%; border: 0;
-  }
-  .modal .close {
-    position: absolute; top: -44px; right: 0;
-    background: none; border: 0; color: #fff; cursor: pointer;
-    font-size: 13px; letter-spacing: .2em; text-transform: uppercase;
-    display: flex; align-items: center; gap: 8px;
-    font-family: inherit;
-  }
-  .modal .close:hover { color: #c9c9c9; }
+/* reduzir movimento: tudo parado e completo */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .foco,.ln{opacity:1;filter:none;transform:none;letter-spacing:.01em}
+  .etapas .feito{transform:none}.et{opacity:1}
+}
+/* ===== v4.2 ===== */
+.nav a{color:inherit;text-decoration:none}
+.links a:not(.btn){color:var(--b2)}.links a:not(.btn):hover{color:var(--b)}
+.dir{display:flex;gap:10px;align-items:center}
+.lang{display:flex;gap:2px;border:1px solid var(--l);border-radius:999px;padding:3px;background:rgba(15,15,15,.45);backdrop-filter:blur(6px)}
+.lang button{background:none;border:0;color:var(--b3);font:500 10.5px var(--mono);letter-spacing:.08em;padding:6px 8px;border-radius:999px;cursor:pointer}
+.lang button.on{background:var(--b);color:var(--p)}
+button.menu{cursor:pointer;padding:0}
+.gaveta{position:absolute;top:76px;left:20px;right:20px;z-index:30;display:grid;gap:4px;padding:14px;border:1px solid var(--l);border-radius:16px;background:rgba(14,12,10,.94);backdrop-filter:blur(10px)}
+[hidden]{display:none!important}
+.gaveta a{color:var(--b);text-decoration:none;padding:12px 10px;font-size:15px;border-bottom:1px solid var(--l)}
+.gaveta a:last-child{border:0}
+.fez{display:flex;gap:14px;align-items:baseline;border-top:1px solid var(--l);padding-top:14px;font-size:13.5px;color:var(--b)}
+.fez .lbl{color:var(--ambar);flex:0 0 auto}
+.contato{font:12px var(--mono);letter-spacing:.06em;color:var(--b2);display:grid;gap:6px;margin-top:6px}
+.contato span{user-select:all}
+/* quem somos */
+.equipe{position:relative;padding:130px 20px 110px}
+.equipe .tt{font-size:46px;margin:16px 0 22px}
+.equipe .lead{color:var(--b2);font-size:16px;max-width:52ch;margin:0}
+.pess{display:grid;gap:56px;margin-top:70px}
+.pp{display:grid;gap:18px;align-content:start}
+.foto{aspect-ratio:4/5;border-radius:14px;border:1px solid var(--l);overflow:hidden;position:relative;display:grid;place-items:center;
+  background:radial-gradient(80% 60% at 50% 30%,rgba(200,146,90,.2),transparent 70%),var(--p2);box-shadow:0 0 70px -20px rgba(200,146,90,.35)}
+.foto b{font-family:var(--disp);font-size:130px;font-weight:700;color:rgba(255,242,224,.1)}
+.foto small{position:absolute;bottom:12px;font:9.5px var(--mono);color:var(--b3);letter-spacing:.16em;text-transform:uppercase}
+.pp .fn{font:10px var(--mono);letter-spacing:.16em;color:var(--ambar);text-transform:uppercase}
+.pp h3{font-family:var(--disp);font-weight:700;font-variant-caps:small-caps;font-size:32px;margin:0;text-shadow:0 0 18px rgba(255,242,224,.2)}
+.pp p{margin:0;color:var(--b2);font-size:15px}
+.pp .btn{justify-self:start;margin-top:4px}
+.rede{margin-top:100px;border:1px solid var(--l);border-radius:18px;padding:40px 26px;display:grid;gap:18px;
+  background:radial-gradient(120% 100% at 0 0,rgba(200,146,90,.14),transparent 60%),var(--p2)}
+.rede .tt{font-size:34px;margin:0}
+.rede p{margin:0;color:var(--b2);font-size:15px;max-width:60ch}
+.volta{margin-top:70px;display:flex;gap:10px;flex-wrap:wrap}
+@container (min-width:760px){
+  .equipe{padding:170px 48px 150px}.equipe .tt{font-size:72px}
+  .pess{grid-template-columns:repeat(3,1fr);gap:36px}
+  .rede{grid-template-columns:1fr 1.2fr;align-items:center;padding:64px;gap:60px}.rede .tt{font-size:48px}
+}
+</style></head><body>
+<div class="stage" id="stage">
+<div class="grain"></div><div class="grain g2"></div><div class="poeira"></div>
+<div class="luz" style="top:16%;left:-30%"></div><div class="luz" style="top:31%;right:-35%;animation-delay:-4s"></div>
+<div class="luz" style="top:49%;left:-35%;animation-delay:-8s"></div><div class="luz" style="top:66%;right:-30%;animation-delay:-2s"></div>
+<div class="luz" style="top:84%;left:-25%;animation-delay:-6s"></div>
 
-  /* ========== ANIMATIONS ========== */
-  .fade-up {
-    opacity: 0; transform: translateY(30px);
-    transition: opacity .7s ease, transform .7s ease;
-  }
-  .fade-up.visible {
-    opacity: 1; transform: translateY(0);
-  }
-</style>
-</head>
-<body>
+<header class="nav"><a class="logo" href="#inicio" data-go="home">KOA<small>AUDIOVISUAL</small></a>
+  <nav class="links"><a href="#trabalhos" data-go="home" data-k="n1">Trabalhos</a><a href="#processo" data-go="home" data-k="n2">Processo</a><a href="#equipe" data-go="equipe" data-k="n4">Quem somos</a><a class="btn vazio" href="#contato" data-go="home" data-k="n5" style="padding:9px 16px;font-size:12.5px">Conversar sobre um projeto</a></nav>
+  <div class="dir"><div class="lang" id="lang"><button class="on" data-l="pt">PT</button><button data-l="en">EN</button><button data-l="es">ES</button></div>
+    <button class="menu" id="menu" aria-label="Menu"><span></span></button></div>
+</header>
+<div class="gaveta" id="gaveta" hidden><a href="#trabalhos" data-go="home" data-k="n1">Trabalhos</a><a href="#processo" data-go="home" data-k="n2">Processo</a><a href="#equipe" data-go="equipe" data-k="n4">Quem somos</a><a href="#contato" data-go="home" data-k="n5">Conversar sobre um projeto</a></div>
 
-<!-- ===== NAV ===== -->
-<nav class="topnav">
-  <a href="#" class="nav-brand">
-    <img src="koa-logo.webp" alt="KOA" />
-    <span>Audiovisual</span>
-  </a>
-  <div class="nav-links" id="navLinks">
-    <a href="#portfolio">Portfólio</a>
-    <a href="#servicos">Serviços</a>
-    <a href="#sobre">Sobre</a>
-    <a href="https://wa.me/5548996330043?text=Oi%2C%20vim%20pelo%20site%20da%20KOA%20Audiovisual." target="_blank" rel="noopener" class="nav-cta">Falar com a gente</a>
-  </div>
-  <button class="hamburger" id="hamburger" aria-label="Menu">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-  </button>
-</nav>
-
-<!-- ===== HERO ===== -->
-<section class="hero" id="hero">
-  <span class="tag fade-up">Produção Audiovisual em Santa Catarina</span>
-  <h1 class="fade-up">Sua marca merece<br>ser vista com <strong>elegância.</strong></h1>
-  <p class="sub fade-up">Vídeo não é só conteúdo. É como você molda a percepção do cliente com o seu produto, através do que ele sente vendo um vídeo sobre o seu negócio.<br><br>Isso é o que separa uma empresa que as pessoas esquecem de uma que elas recomendam. A gente trabalha com esse segundo tipo.</p>
-  <div class="hero-actions fade-up">
-    <a class="btn primary" href="#portfolio">Ver portfólio</a>
-    <a class="btn" href="https://wa.me/5548996330043?text=Oi%2C%20quero%20falar%20sobre%20um%20projeto." target="_blank" rel="noopener">
-      Falar sobre seu projeto
-    </a>
+<main id="v-home">
+<section class="hero" id="inicio">
+  <div class="bg"><video autoplay muted loop playsinline poster="assets/poster_ak.jpg" src="assets/loop_ak.mp4"></video></div><div class="feixe"></div><div class="leak"></div><div class="vin"></div>
+  <div class="bar t"></div><div class="bar b"></div>
+  <div class="rec"><b>●</b> REC<br><span id="tc">00:00:00:00</span></div>
+  <div class="txt">
+    <span class="kick ln" data-k="h0">KOA Audiovisual · Santa Catarina</span>
+    <h1 class="tt foco" data-k="h1">A Inteligência do Sentir</h1>
+    <p class="ln" data-k="h2">Filmes para projetos que querem conectar e ser lembrados muito além da tela.</p>
+    <div class="ctas ln"><a class="btn cheio" href="#trabalhos" data-k="h3">Ver trabalhos</a><button class="btn vazio" data-yt="w3H43fZqEgg" data-nome="AKAIKAME · Demoreel" data-k="h4">▶ Assistir ao demoreel</button></div>
   </div>
 </section>
 
-<!-- ===== PORTFÓLIO ===== -->
-<section class="portfolio" id="portfolio">
-  <span class="tag fade-up">Portfólio</span>
-  <h2 class="fade-up">Trabalhos que falam por si.</h2>
+<section class="man">
+  <div class="glow"></div>
+  <div><span class="pill"><i></i><span data-k="m0">O olhar</span></span><h2 class="tt foco" data-k="m1">Antes da câmera, a escuta</h2></div>
+  <div class="corpo">
+    <p class="ln" data-k="m2">Todo projeto começa com uma pergunta simples: <strong>o que essa história precisa fazer alguém sentir?</strong></p>
+    <p class="ln" data-k="m3">Técnica se aprende. Câmera boa se aluga. O que muda um filme é o olhar de quem decide onde a luz cai, quanto tempo um plano respira e qual silêncio fica na montagem.</p>
+    <p class="ln" data-k="m4">É esse olhar que a gente traz para cada trabalho, do filme de um empreendimento ao clipe de um artista.</p>
+  </div>
+  <p class="leg ln" data-k="m5">— A emoção chega primeiro. O entendimento vem depois.</p>
+</section>
 
-  <div class="portfolio-grid fade-up" id="grid">
-    <!-- ROW 1 -->
-    <div class="cell" data-video-id="502352888" data-platform="vimeo"
-         style="grid-row:1;grid-column:1;">
-      <iframe src="https://player.vimeo.com/video/502352888?background=1&autoplay=1&muted=1&loop=1&autopause=0&controls=0&dnt=1"
-        allow="autoplay; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      <div class="label">
-        <div class="title">AKAIKAME — Demoreel</div>
-        <div class="cat">Quem somos</div>
-      </div>
+<section class="eixos">
+  <div class="pc ln"><span class="n">STORYTELLING</span><h3 data-k="e1">Narrativas que Conectam</h3><p data-k="e2">Uma história com começo, meio e fim, contada de um jeito que a pessoa reconhece como dela. É isso que faz um filme ser lembrado depois que a tela apaga.</p></div>
+  <div class="pc ln"><span class="n" data-k="e3">SENSIBILIDADE</span><h3 data-k="e4">Olhar de Cinema</h3><p data-k="e5">Luz, enquadramento, ritmo e silêncio escolhidos para a emoção que a cena pede, plano a plano. O espectador talvez não saiba explicar, mas sente.</p></div>
+</section>
+<div class="oficio ln"><span class="lbl" data-k="o1">Ofício</span><span data-k="o2">Do roteiro à cor: direção, captação, edição, cor, desenho de som e motion, feitos pelo mesmo time, com o mesmo cuidado.</span></div>
+
+<section class="port" id="trabalhos">
+  <div class="head"><div><span class="pill"><i></i><span data-k="p0">Portfólio</span></span><h2 class="tt foco" style="margin-top:12px" data-k="p1">Trabalhos</h2></div>
+    <p class="ln" style="margin:0;color:var(--b2);font-size:15px;max-width:44ch" data-k="p2">Uma seleção de filmes feitos para marcas, empreendimentos e artistas, alguns por conta própria, outros em parceria com agências e produtoras.</p></div>
+  <div class="tabs" id="tabs" role="tablist">
+    <button class="on" data-t="inst" data-k="t1">Institucionais</button><button data-t="pub" data-k="t2">Publicidade</button><button data-t="obra" data-k="t3">Construtoras e empreendimentos</button><button data-t="clip" data-k="t4">Videoclipes</button><button data-t="aut" data-k="t5">Filmes autorais</button><button data-t="hist" data-k="t6">Histórias reais</button><button data-t="lanc" data-k="t7">Lançamentos e moda</button><button data-t="ev" data-k="t8">Eventos e same day</button>
+  </div>
+
+  <!-- INSTITUCIONAIS -->
+  <div class="painel" data-p="inst">
+    <div class="feat"><img class="amb" src="assets/poster_gb.jpg" alt="">
+      <div class="in"><div class="scr" data-yt="kGrXCiRMeWs" data-nome="Green Barn Hotel"><video muted loop playsinline preload="none" poster="assets/poster_gb.jpg" src="assets/loop_gb.mp4"></video><span class="prev" data-k="pv">PRÉVIA</span><span class="pl">▶</span></div>
+        <div><span class="lbl" data-k="i0">Institucional · Hotelaria</span><h3>Green Barn Hotel</h3><p class="lg" data-k="i1">Chalés na Serra Catarinense apresentados pelo que se vive lá: a névoa da manhã, o vinho à luz de vela, o silêncio da mata.</p>
+          <div class="fez"><span class="lbl" data-k="fz">O que fizemos</span><span data-k="i2">O filme inteiro, da ideia à cor final</span></div></div></div></div>
+    <div class="grid">
+      <div class="card" data-yt="sWzzwwpkijo" data-nome="El Sabor de Cartagena"><img src="assets/poster_sabor.jpg" alt="" loading="lazy"><span class="pl">▶</span><div class="cap"><b>El Sabor de Cartagena</b><small data-k="i3">Gastronomia · Colômbia</small></div></div>
+      <div class="card" data-yt="39lZX-QxyxU" data-nome="Dr. Gazeto"><img src="assets/39lZX-QxyxU.jpg" alt="" loading="lazy"><span class="pl">▶</span><div class="cap"><b>Dr. Gazeto</b><small data-k="i4">Do roteiro à entrega</small></div></div>
+      <div class="card" data-vm="502343641" data-nome="Memorial Gesoni Pawlick"><img src="assets/vm502343641.jpg" alt="" loading="lazy"><span class="pl">▶</span><div class="cap"><b>Memorial Gesoni Pawlick</b><small data-k="i5">Direção, imagem e pós-produção</small></div></div>
     </div>
+  </div>
 
-    <div class="cell" data-video-id="713768863" data-platform="vimeo"
-         style="grid-row:1;grid-column:2;">
-      <iframe src="https://player.vimeo.com/video/713768863?background=1&autoplay=1&muted=1&loop=1&autopause=0&controls=0&dnt=1"
-        allow="autoplay; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      <div class="label">
-        <div class="title">IMA</div>
-        <div class="cat">Institucional</div>
-      </div>
+  <!-- PUBLICIDADE -->
+  <div class="painel" data-p="pub" hidden>
+    <div class="feat"><img class="amb" src="assets/poster_pub.jpg" alt="">
+      <div class="in"><div class="scr" data-yt="JAMrFwHEvYk" data-nome="Sou Bem Floripa"><video muted loop playsinline preload="none" poster="assets/poster_pub.jpg" src="assets/loop_pub.mp4"></video><span class="prev" data-k="pv">PRÉVIA</span><span class="pl">▶</span></div>
+        <div><span class="lbl" data-k="u0">Publicidade · Florianópolis</span><h3>Sou Bem Floripa</h3><p class="lg" data-k="u1">Uma marca contada pela cidade que ela escolheu para viver.</p>
+          <div class="fez"><span class="lbl" data-k="fz">O que fizemos</span><span data-k="u2">Filme completo</span></div></div></div></div>
+    <div class="grid">
+      <div class="card" data-yt="Ov62pTel__I" data-nome="CREA SC"><span class="pill tag" data-k="pa">Parceria</span><img src="assets/Ov62pTel__I.jpg" alt="" loading="lazy"><span class="pl">▶</span><div class="cap"><b>CREA SC</b><small data-k="u3">Montagem, cor, som e motion</small></div></div>
+      <div class="card" data-yt="voP103i8Drc" data-nome="IMA"><span class="pill tag" data-k="pa">Parceria</span><img src="assets/voP103i8Drc.jpg" alt="" loading="lazy"><span class="pl">▶</span><div class="cap"><b>IMA</b><small data-k="u4">Pós-produção completa</small></div></div>
+      <div class="card" data-yt="qHK9Z6bY8X4" data-nome="Nova Praia · Prefeitura de BC"><span class="pill tag" data-k="pa">Parceria</span><img src="assets/qHK9Z6bY8X4.jpg" alt="" loading="lazy"><span class="pl">▶</span><div class="cap"><b>Nova Praia</b><small data-k="u5">Prefeitura de BC · imagem e pós</small></div></div>
     </div>
+  </div>
 
-    <div class="cell" data-video-id="713767142" data-platform="vimeo"
-         style="grid-row:1;grid-column:3;">
-      <iframe src="https://player.vimeo.com/video/713767142?background=1&autoplay=1&muted=1&loop=1&autopause=0&controls=0&dnt=1"
-        allow="autoplay; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      <div class="label">
-        <div class="title">CREA SC</div>
-        <div class="cat">Institucional</div>
-      </div>
+  <!-- CONSTRUTORAS -->
+  <div class="painel" data-p="obra" hidden>
+    <p class="intro" data-k="b0">Filmes que fazem a pessoa se imaginar morando, trabalhando ou vivendo ali, antes da primeira visita.</p>
+    <div class="feat"><img class="amb" src="assets/poster_lyth.jpg" alt="">
+      <div class="in"><div class="scr" data-yt="KRXor5RUptA" data-nome="Live Your Time"><video muted loop playsinline preload="none" poster="assets/poster_lyth.jpg" src="assets/loop_lyth.mp4"></video><span class="prev" data-k="pv">PRÉVIA</span><span class="pl">▶</span></div>
+        <div><span class="lbl" data-k="b1">Empreendimento · Investidores</span><h3>Live Your Time</h3><p class="lg" data-k="b2">Um empreendimento apresentado pelo ritmo de vida que ele propõe.</p>
+          <div class="fez"><span class="lbl" data-k="fz">O que fizemos</span><span data-k="b3">Do roteiro ao desenho de som</span></div></div></div></div>
+    <div class="grid">
+      <div class="card" data-yt="KX2YC5gg1Dc" data-nome="Lunna Residence"><img src="assets/KX2YC5gg1Dc.jpg" alt="" loading="lazy"><span class="pl">▶</span><div class="cap"><b>Lunna Residence</b><small data-k="b4">Filme completo</small></div></div>
+      <div class="card" data-yt="TWxKsbGpO-0" data-nome="Maldivas Spa Urbano"><img src="assets/TWxKsbGpO-0.jpg" alt="" loading="lazy"><span class="pl">▶</span><div class="cap"><b>Maldivas Spa Urbano</b><small data-k="b5">Residencial</small></div></div>
     </div>
+  </div>
 
-    <!-- ROW 2 -->
-    <div class="cell" data-video-id="654253077" data-platform="vimeo"
-         style="grid-row:2;grid-column:1;">
-      <iframe src="https://player.vimeo.com/video/654253077?background=1&autoplay=1&muted=1&loop=1&autopause=0&controls=0&dnt=1"
-        allow="autoplay; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      <div class="label">
-        <div class="title">Nova Praia BC</div>
-        <div class="cat">Entrega oficial</div>
-      </div>
+  <!-- VIDEOCLIPES -->
+  <div class="painel" data-p="clip" hidden>
+    <div class="feat"><img class="amb" src="assets/poster_cura.jpg" alt="">
+      <div class="in"><div class="scr" data-yt="ZYU6a8ndyY8" data-nome="Cura Grande Espírito · Txana Vake"><video muted loop playsinline preload="none" poster="assets/poster_cura.jpg" src="assets/loop_cura.mp4"></video><span class="prev" data-k="pv">PRÉVIA</span><span class="pl">▶</span></div>
+        <div><span class="lbl" data-k="v0">Videoclipe</span><h3>Cura Grande Espírito</h3><p class="lg" data-k="v1">Txana Vake. Um canto de cura filmado com o respeito que ele pede.</p>
+          <div class="fez"><span class="lbl" data-k="fz">O que fizemos</span><span data-k="v2">Do conceito à cor</span></div></div></div></div>
+    <div class="grid">
+      <div class="card" data-yt="HJRYVB6dYvo" data-nome="The Mountain · Din Rose"><img src="assets/HJRYVB6dYvo.jpg" alt="" loading="lazy"><span class="pl">▶</span><div class="cap"><b>The Mountain</b><small>Din Rose</small></div></div>
+      <div class="card" data-yt="ESRbGLmX_C0" data-nome="Lila · Din Rose"><img src="assets/ESRbGLmX_C0.jpg" alt="" loading="lazy"><span class="pl">▶</span><div class="cap"><b>Lila</b><small>Din Rose ft. Negro Rudhy</small></div></div>
     </div>
+  </div>
 
-    <div class="cell" data-video-id="yyCarSgUls8" data-platform="youtube"
-         style="grid-row:2;grid-column:2;">
-      <iframe src="https://www.youtube.com/embed/yyCarSgUls8?si=icvFd_F2uBr9ptIQ&controls=0&autoplay=1&mute=1&loop=1&playlist=yyCarSgUls8&modestbranding=1&playsinline=1&rel=0&showinfo=0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" loading="lazy"></iframe>
-      <div class="label">
-        <div class="title">Majestic — Ano Novo</div>
-        <div class="cat">Evento</div>
-      </div>
+  <!-- AUTORAIS -->
+  <div class="painel" data-p="aut" hidden>
+    <div class="feat"><img class="amb" src="assets/poster_ayahuasca.jpg" alt="">
+      <div class="in"><div class="scr" data-yt="_M0bsBDVy1A" data-nome="A Experiência Visionária"><video muted loop playsinline preload="none" poster="assets/poster_ayahuasca.jpg" src="assets/loop_ayahuasca.mp4"></video><span class="prev" data-k="pv">PRÉVIA</span><span class="pl">▶</span></div>
+        <div><span class="lbl" data-k="a0">Filme autoral · Documentário</span><h3 data-k="a1">A Experiência Visionária</h3><p class="lg" data-k="a2">O desafio de explicar o inexplicável: filmar algo que acontece por dentro.</p>
+          <div class="fez"><span class="lbl" data-k="a3">Assinatura</span><span data-k="a4">Um filme de Guzz Secco</span></div></div></div></div>
+    <div class="grid">
+      <div class="card" data-yt="YnrNlTEFDOg" data-nome="The Egg"><img src="assets/limpo_egg.jpg" alt="" loading="lazy"><span class="pl">▶</span><div class="cap"><b>The Egg</b><small data-k="a5">Curta</small></div></div>
+      <div class="card" data-yt="9DF8Eok_3nA" data-nome="Shambala"><img src="assets/limpo_shambala.jpg" alt="" loading="lazy"><span class="pl">▶</span><div class="cap"><b>Shambala</b><small data-k="a6">Ensaio</small></div></div>
+      <div class="card" data-yt="BovvOHHXp9Y" data-nome="The Future of Humanity"><img src="assets/limpo_future.jpg" alt="" loading="lazy"><span class="pl">▶</span><div class="cap"><b>The Future of Humanity</b><small data-k="a6">Ensaio</small></div></div>
     </div>
+  </div>
 
-    <div class="cell" data-video-id="502353512" data-platform="vimeo"
-         style="grid-row:2;grid-column:3;">
-      <iframe src="https://player.vimeo.com/video/502353512?background=1&autoplay=1&muted=1&loop=1&autopause=0&controls=0&dnt=1"
-        allow="autoplay; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      <div class="label">
-        <div class="title">Pedra do Mar</div>
-        <div class="cat">Branded — Black Edition</div>
-      </div>
+  <!-- HISTÓRIAS REAIS -->
+  <div class="painel" data-p="hist" hidden>
+    <p class="intro" data-k="r0">Pessoas reais contando o que viveram. Aqui a câmera mais escuta do que fala.</p>
+    <div class="feat"><img class="amb" src="assets/poster_north.jpg" alt="">
+      <div class="in"><div class="scr" data-yt="iHuP4XMSyTE" data-nome="North Pré-Vestibular"><video muted loop playsinline preload="none" poster="assets/poster_north.jpg" src="assets/loop_north.mp4"></video><span class="prev" data-k="pv">PRÉVIA</span><span class="pl">▶</span></div>
+        <div><span class="lbl" data-k="r1">Depoimentos</span><h3 data-k="r2">North Pré-Vestibular</h3><p class="lg" data-k="r3">Histórias de quem passou por um dos anos mais decisivos da vida.</p>
+          <div class="fez"><span class="lbl" data-k="fz">O que fizemos</span><span data-k="r4">Entrevistas, imagem e montagem</span></div></div></div></div>
+    <div class="grid">
+      <div class="card" data-yt="oAi-h60ELxE" data-nome="Projeto Cora"><img src="assets/oAi-h60ELxE.jpg" alt="" loading="lazy"><span class="pl">▶</span><div class="cap"><b data-k="r5">Projeto Cora</b><small data-k="r6">Projeto social</small></div></div>
+      <div class="card" data-yt="WbGetExHrxs" data-nome="Tatá — O Oleiro"><img src="assets/WbGetExHrxs.jpg" alt="" loading="lazy"><span class="pl">▶</span><div class="cap"><b data-k="r7">Tatá — O Oleiro</b><small data-k="r8">Documentário</small></div></div>
     </div>
+  </div>
 
-    <!-- ROW 3 -->
-    <div class="cell" data-video-id="664807500" data-platform="vimeo"
-         style="grid-row:3;grid-column:1;">
-      <iframe src="https://player.vimeo.com/video/664807500?background=1&autoplay=1&muted=1&loop=1&autopause=0&controls=0&dnt=1"
-        allow="autoplay; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      <div class="label">
-        <div class="title">Lunna Residence</div>
-        <div class="cat">Imobiliário</div>
-      </div>
+  <!-- LANÇAMENTOS E MODA -->
+  <div class="painel" data-p="lanc" hidden>
+    <div class="feat"><img class="amb" src="assets/g_rio.jpg" alt="">
+      <div class="in"><div class="scr" data-yt="tyKVeUfsJlY" data-nome="R.I.O. — Raised in Oblivion"><video muted loop playsinline preload="none" poster="assets/poster_rio.jpg" src="assets/loop_rio.mp4"></video><span class="prev" data-k="pv">PRÉVIA</span><span class="pl">▶</span></div>
+        <div><span class="lbl" data-k="l0">Lançamento · Moda</span><h3>R.I.O.</h3><p class="lg" data-k="l1">Raised in Oblivion. Uma coleção lançada como filme.</p>
+          <div class="fez"><span class="lbl" data-k="fz">O que fizemos</span><span data-k="l2">Direção e filme de lançamento</span></div></div></div></div>
+    <div class="grid">
+      <div class="card" data-vm="502349901" data-nome="Ballad"><span class="pill tag" data-k="mo">Moda</span><img src="assets/vm502349901.jpg" alt="" loading="lazy"><span class="pl">▶</span><div class="cap"><b>Ballad</b><small>Fashion film '20</small></div></div>
+      <div class="card" data-vm="501481439" data-nome="Onça Preta · Film '19"><span class="pill tag" data-k="mo">Moda</span><img src="assets/g_onca19.jpg" alt="" loading="lazy"><span class="pl">▶</span><div class="cap"><b>Onça Preta</b><small>Film '19</small></div></div>
+      <div class="card" data-vm="499348045" data-nome="Onça Preta · Film '20"><span class="pill tag" data-k="mo">Moda</span><img src="assets/g_onca20.jpg" alt="" loading="lazy"><span class="pl">▶</span><div class="cap"><b>Onça Preta</b><small>Film '20</small></div></div>
+      <div class="card" data-vm="343564332" data-nome="Evolution"><span class="pill tag" data-k="mo">Moda</span><img src="assets/vm343564332.jpg" alt="" loading="lazy"><span class="pl">▶</span><div class="cap"><b>Evolution</b><small>Film '19</small></div></div>
+      <div class="card" data-vm="502353512" data-nome="Pedra do Mar"><span class="pill tag" data-k="la">Lançamento</span><img src="assets/vm502353512.jpg" alt="" loading="lazy"><span class="pl">▶</span><div class="cap"><b>Pedra do Mar</b><small data-k="l3">Imagem, cor, som e motion</small></div></div>
     </div>
+  </div>
 
-    <div class="cell" data-video-id="505755487" data-platform="vimeo"
-         style="grid-row:3;grid-column:2;">
-      <iframe src="https://player.vimeo.com/video/505755487?background=1&autoplay=1&muted=1&loop=1&autopause=0&controls=0&dnt=1"
-        allow="autoplay; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      <div class="label">
-        <div class="title">LYTH — Investidores</div>
-        <div class="cat">Imobiliário</div>
-      </div>
-    </div>
-
-    <div class="cell" data-video-id="502343641" data-platform="vimeo"
-         style="grid-row:3;grid-column:3;">
-      <iframe src="https://player.vimeo.com/video/502343641?background=1&autoplay=1&muted=1&loop=1&autopause=0&controls=0&dnt=1&title=0&byline=0&portrait=0"
-        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" loading="lazy"></iframe>
-      <div class="label">
-        <div class="title">Memorial Gesoni Pawlick</div>
-        <div class="cat">Institucional</div>
-      </div>
-    </div>
-
-    <!-- ROW 4 -->
-    <div class="cell" data-video-id="588441363" data-platform="vimeo"
-         style="grid-row:4;grid-column:1;">
-      <iframe src="https://player.vimeo.com/video/588441363?background=1&autoplay=1&muted=1&loop=1&autopause=0&controls=0&dnt=1&title=0&byline=0&portrait=0"
-        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" loading="lazy"></iframe>
-      <div class="label">
-        <div class="title">Dr. Gazeto PetShop</div>
-        <div class="cat">Institucional</div>
-      </div>
-    </div>
-
-    <div class="cell" data-video-id="kGrXCiRMeWs" data-platform="youtube"
-         style="grid-row:4;grid-column:2;">
-      <iframe src="https://www.youtube.com/embed/kGrXCiRMeWs?si=jMbKn_-0xHOduYHP&controls=0&autoplay=1&mute=1&loop=1&playlist=kGrXCiRMeWs&modestbranding=1&playsinline=1&rel=0&showinfo=0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" loading="lazy"></iframe>
-      <div class="label">
-        <div class="title">Green Barn Hotel</div>
-        <div class="cat">Institucional</div>
-      </div>
-    </div>
-
-    <div class="cell" data-video-id="713768863" data-platform="vimeo"
-         style="grid-row:4;grid-column:3;">
-      <iframe src="https://player.vimeo.com/video/713768863?background=1&autoplay=1&muted=1&loop=1&autopause=0&controls=0&dnt=1"
-        allow="autoplay; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      <div class="label">
-        <div class="title">IMA — Completo</div>
-        <div class="cat">Institucional</div>
-      </div>
+  <!-- EVENTOS E SAME DAY -->
+  <div class="painel" data-p="ev" hidden>
+    <p class="intro" data-k="s0">Eventos filmados com olhar de cinema. No same day, o filme é editado e exibido no mesmo dia.</p>
+    <div class="feat"><img class="amb" src="assets/poster_majestic.jpg" alt="">
+      <div class="in"><div class="scr" data-yt="yyCarSgUls8" data-nome="Réveillon · Majestic Palace Hotel"><video muted loop playsinline preload="none" poster="assets/poster_majestic.jpg" src="assets/loop_majestic.mp4"></video><span class="prev" data-k="pv">PRÉVIA</span><span class="pl">▶</span></div>
+        <div><span class="lbl" data-k="s1">Evento · Hotelaria</span><h3 data-k="s2">Réveillon Majestic</h3><p class="lg" data-k="s3">A virada de ano do Majestic Palace Hotel, contada pelas pessoas que estavam lá.</p>
+          <div class="fez"><span class="lbl" data-k="fz">O que fizemos</span><span data-k="s4">Cobertura e filme da noite</span></div></div></div></div>
+    <div class="grid">
+      <div class="card" data-yt="yjOReAJHcsA" data-nome="Banco do Brasil · Same day"><span class="pill tag dia"><i></i><span data-k="md">Mesmo dia</span></span><img src="assets/yjOReAJHcsA.jpg" alt="" loading="lazy"><span class="pl">▶</span><div class="cap"><b>Banco do Brasil</b><small data-k="s5">Filmado e exibido no mesmo dia</small></div></div>
+      <div class="card" data-yt="q2BgCydGgKM" data-nome="Summit Cidades · Same day"><span class="pill tag dia"><i></i><span data-k="md">Mesmo dia</span></span><img src="assets/q2BgCydGgKM.jpg" alt="" loading="lazy"><span class="pl">▶</span><div class="cap"><b>Summit Cidades</b><small data-k="s6">Edição em tempo real</small></div></div>
+      <div class="card" data-vm="502331662" data-nome="Meraki"><span class="pill tag" data-k="ev">Evento</span><img src="assets/g_meraki.jpg" alt="" loading="lazy"><span class="pl">▶</span><div class="cap"><b>Meraki</b><small data-k="s7">Lançamento</small></div></div>
+      <div class="card" data-vm="502354237" data-nome="Workshop Photo In Water"><span class="pill tag" data-k="ev">Evento</span><img src="assets/vm502354237.jpg" alt="" loading="lazy"><span class="pl">▶</span><div class="cap"><b>Photo In Water</b><small>Workshop</small></div></div>
     </div>
   </div>
 </section>
 
-<!-- ===== SERVIÇOS ===== -->
-<section class="servicos" id="servicos">
-  <span class="tag fade-up">O que fazemos</span>
-  <h2 class="fade-up">Serviços feitos pra converter.</h2>
+<section class="obra">
+  <div class="bg"><img src="assets/KX2YC5gg1Dc.jpg" alt=""></div>
+  <div class="in"><span class="pill" style="justify-self:start"><i></i><span data-k="w0">Para construtoras e empreendimentos</span></span>
+    <h2 class="tt foco" data-k="w1">Antes da Planta, a Vida que Ela Promete</h2>
+    <p class="ln" data-k="w2">Um empreendimento costuma ser lembrado pela sensação que deixa: a luz da manhã, o silêncio, a vista da varanda. A gente filma isso, para o comprador e para o investidor.</p>
+    <button class="btn vazio" data-ir="obra" data-k="w3">Ver filmes de empreendimentos</button></div>
+</section>
 
-  <div class="servicos-grid">
-    <div class="servico-card fade-up">
-      <div class="servico-num">01</div>
-      <h3>Vídeo Institucional</h3>
-      <p>A apresentação definitiva da sua empresa. Profissional, memorável e feita pra durar. Usada em site, apresentações comerciais e campanhas de marca.</p>
-      <div class="servico-price">A partir de R$ 5.000</div>
-    </div>
-    <div class="servico-card fade-up">
-      <div class="servico-num">02</div>
-      <h3>Conteúdo para Redes</h3>
-      <p>Produção mensal de vídeos curtos e consistentes para Instagram, YouTube e TikTok. Presença constante com qualidade de produtora, não de amador.</p>
-      <div class="servico-price">A partir de R$ 2.000/mês</div>
-    </div>
-    <div class="servico-card fade-up">
-      <div class="servico-num">03</div>
-      <h3>Campanha Publicitária</h3>
-      <p>Do conceito criativo à entrega final. Anúncios em vídeo para tráfego pago, lançamentos e ações de marca que precisam de impacto real.</p>
-      <div class="servico-price">Sob consulta</div>
-    </div>
+<section class="cria" id="processo">
+  <div class="film" data-yt="w3H43fZqEgg" data-nome="AKAIKAME · Demoreel"><img src="assets/ak_thumb.jpg" alt=""><span class="pl">▶</span></div>
+  <div><span class="pill"><i></i><span data-k="d0">Processo de criação</span></span><h2 class="tt foco" data-k="d1">Dar Vida a uma Ideia</h2>
+    <p class="ln" data-k="d2">O demoreel da AKAIKAME fala de ideias que nascem da união de várias mentes e da colisão entre elas. Estudar, pesquisar, tomar decisões, escolher cada traço, até a coisa ganhar forma.</p>
+    <p class="ln" data-k="d3">É assim que a gente trabalha até hoje. Cada projeto começa com espaço para a ideia amadurecer, antes de qualquer equipamento sair da case.</p>
+    <button class="btn vazio ln" data-yt="w3H43fZqEgg" data-nome="AKAIKAME · Demoreel" style="margin-top:6px" data-k="h4">▶ Assistir ao demoreel</button></div>
+</section>
+
+<section class="prod">
+  <span class="pill"><i></i><span data-k="q0">Processo de produção</span></span><h2 class="tt foco" data-k="q1">Do Primeiro Café à Entrega</h2>
+  <div class="etapas" id="etapas"><span class="trilho"></span><span class="feito"></span><span class="cursor"></span>
+    <div class="et"><span class="n">01</span><h4 data-k="q2">Escuta</h4><p data-k="q3">Conversa sobre o objetivo, o público e o que o filme precisa provocar.</p></div>
+    <div class="et"><span class="n">02</span><h4 data-k="q4">Roteiro e Pré</h4><p data-k="q5">Roteiro, decupagem, locações, equipe e cronograma aprovados antes do set.</p></div>
+    <div class="et"><span class="n">03</span><h4 data-k="q6">Set</h4><p data-k="q7">Captação com direção de fotografia, som direto e equipe do tamanho do projeto.</p></div>
+    <div class="et"><span class="n">04</span><h4 data-k="q8">Pós</h4><p data-k="q9">Montagem, cor, desenho de som e motion, com rodadas de revisão combinadas.</p></div>
+    <div class="et"><span class="n">05</span><h4 data-k="qa">Entrega</h4><p data-k="qb">Versões para cada tela e formato, na data combinada.</p></div>
   </div>
 </section>
 
-<!-- ===== DIFERENCIAIS ===== -->
-<section class="diferenciais" id="sobre">
-  <span class="tag fade-up">Por que a KOA</span>
-  <h2 class="fade-up">O problema com a maioria das produtoras não é talento. É gestão.</h2>
-  <p class="dif-intro fade-up">Prazo que escorrega. Briefing que some. Entrega que não era bem isso. Você já passou por isso, ou conhece alguém que passou. A gente construiu um processo que elimina esse tipo de problema antes que ele aconteça. Não por acidente. Por escolha.</p>
-
-  <div class="dif-grid">
-    <div class="dif-item fade-up">
-      <h3>Prazo é contrato</h3>
-      <p>Data de entrega combinada é data de entrega cumprida. Sem postergação, sem desculpa de última hora.</p>
-    </div>
-    <div class="dif-item fade-up">
-      <h3>Comunicação sem ruído</h3>
-      <p>Do briefing à aprovação final, você sabe exatamente em que fase está o projeto. Sem sumir, sem surpresa.</p>
-    </div>
-    <div class="dif-item fade-up">
-      <h3>Padrão técnico consistente</h3>
-      <p>Cada projeto entregue com o mesmo nível de qualidade, independente do tamanho. Seu negócio em primeiro lugar.</p>
-    </div>
-  </div>
+<section class="parc" id="parcerias">
+  <div><span class="pill"><i></i><span data-k="g0">Para agências e produtoras</span></span><h2 class="tt foco" data-k="g1">Projetos em Parceria</h2>
+    <p class="ln" data-k="g2">Boa parte do nosso trabalho foi feita em parceria com agências, produtoras e parceiros. Entramos na etapa que o projeto precisa, com o nosso olhar e o seu nome na frente.</p></div>
+  <div class="chips ln"><span data-k="x1">Direção</span><span data-k="x2">Roteiro</span><span data-k="x3">Captação</span><span data-k="x4">Edição</span><span data-k="x5">Cor</span><span data-k="x6">Desenho de som</span><span>Motion</span><span>Same day</span></div>
 </section>
 
-<!-- ===== DEPOIMENTOS ===== -->
-<section class="depoimentos" id="depoimentos">
-  <span class="tag fade-up">Quem já trabalhou com a gente</span>
-  <h2 class="fade-up">O que nossos clientes dizem.</h2>
-
-  <!-- Text testimonials -->
-  <div class="depoimentos-grid">
-    <div class="depo-card fade-up">
-      <div class="depo-quote-mark">"</div>
-      <p class="depo-text">Cara, eu assisti de novo aqui. Ficou foda pra caralho. Até eu me senti seduzido pela narração. E junto com as imagens e efeitos, ficou foda demais. São poucas VSLs na Internet com essa pegada. Tá hipnótico. Tem momentos que dá um arrepio na espinha.</p>
-      <div class="depo-author-info">
-        <div class="depo-author">Kal-EL Dias</div>
-        <div class="depo-role">Cliente — Produção de VSL</div>
-      </div>
-    </div>
-    <div class="depo-card fade-up">
-      <div class="depo-quote-mark">"</div>
-      <p class="depo-text">O trabalho que o Gustavo e todos os que trabalhando com ele foi espetacular, e fez toda a diferença para que o meu produto alcançasse a identidade que nós estávamos buscando. O entendimento sobre a "alma" que estávamos buscando para nosso projeto, foi captada da melhor forma possível. O vídeo de apresentação e o caderno de vendas, foi na véia. Só tenho a agradecer por todo grande trabalho executado e dedicação para que tudo saísse perfeito!</p>
-      <div class="depo-author-info">
-        <div class="depo-author">Gabriel No</div>
-        <div class="depo-role">Cliente — Vídeo Institucional</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Audio testimonials -->
-  <div class="depo-media-section fade-up">
-    <div class="depo-media-label">Depoimentos em áudio</div>
-    <div class="depo-media-grid">
-      <div class="depo-media-card">
-        <div class="media-label">Green Barn Hotel</div>
-        <audio controls preload="metadata">
-          <source src="depoimentos/greenbarn.ogg" type="audio/ogg">
-        </audio>
-      </div>
-      <div class="depo-media-card">
-        <div class="media-label">Depoimento — Parte 1</div>
-        <audio controls preload="metadata">
-          <source src="depoimentos/sitio1.ogg" type="audio/ogg">
-        </audio>
-      </div>
-      <div class="depo-media-card">
-        <div class="media-label">Depoimento — Parte 2</div>
-        <audio controls preload="metadata">
-          <source src="depoimentos/sitio2.ogg" type="audio/ogg">
-        </audio>
-      </div>
-      <div class="depo-media-card">
-        <div class="media-label">Depoimento — Parte 3</div>
-        <audio controls preload="metadata">
-          <source src="depoimentos/sitio3.ogg" type="audio/ogg">
-        </audio>
-      </div>
-    </div>
-  </div>
-
-  <!-- Video testimonials -->
-  <div class="depo-media-section fade-up" style="margin-top: 32px;">
-    <div class="depo-media-label">Depoimentos em vídeo</div>
-    <div class="depo-media-grid">
-      <div class="depo-media-card">
-        <video controls preload="metadata" playsinline>
-          <source src="depoimentos/video1.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="depo-media-card">
-        <video controls preload="metadata" playsinline>
-          <source src="depoimentos/video2.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-  </div>
+<section class="dep">
+  <span class="lbl" data-k="j0">Quem já trabalhou com a gente</span>
+  <blockquote class="ln" data-k="j1">“O entendimento sobre a alma que estávamos buscando para nosso projeto foi captado da melhor forma possível.”</blockquote>
+  <cite data-k="j2">Gabriel No · Vídeo institucional</cite>
 </section>
 
-<!-- ===== CTA FINAL ===== -->
-<section class="cta-final">
-  <span class="tag fade-up">Vamos começar</span>
-  <h2 class="fade-up">Pronto pra fazer vídeo<br>que funciona?</h2>
-  <p class="cta-sub fade-up">Conta pra gente o que você precisa. A gente analisa e já te apresenta uma proposta.</p>
-  <div class="cta-actions fade-up">
-    <a class="btn primary" href="https://wa.me/5548996330043?text=Oi%2C%20quero%20falar%20sobre%20um%20projeto%20audiovisual." target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.94 9.94 0 0 0-8.56 15l-1.44 5.28 5.42-1.42A9.94 9.94 0 1 0 12.04 2Zm5.82 14.25c-.25.7-1.44 1.33-2.01 1.41-.52.07-1.16.1-1.87-.12-.43-.13-1-.32-1.71-.63-3.01-1.3-4.97-4.34-5.12-4.54-.15-.2-1.23-1.63-1.23-3.11 0-1.48.78-2.2 1.05-2.5.27-.3.59-.38.79-.38h.57c.18 0 .43-.07.67.51.25.6.85 2.08.93 2.23.07.15.13.33.02.53-.1.2-.15.32-.3.5-.15.17-.32.39-.46.52-.15.15-.31.31-.13.61.17.3.77 1.27 1.65 2.06 1.13 1 2.08 1.31 2.38 1.46.3.15.47.12.65-.07.18-.2.75-.87.95-1.17.2-.3.4-.25.66-.15.27.1 1.72.81 2.01.96.3.15.49.22.56.35.07.13.07.72-.18 1.42Z"/></svg>
-      Falar pelo WhatsApp
-    </a>
-    <a class="btn" href="mailto:guzzsecco@gmail.com?subject=Projeto%20audiovisual%20%E2%80%94%20KOA">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 7 9 7 9-7"/></svg>
-      Enviar email
-    </a>
-  </div>
+<section class="fim" id="contato">
+  <div class="bg"><img src="assets/ESRbGLmX_C0.jpg" alt=""></div><div class="vin"></div>
+  <div class="in"><span class="kick" data-k="f0">Próxima cena</span><h2 class="tt foco" data-k="f1">Vamos Contar a Sua História</h2>
+    <p class="ln" data-k="f2">Conte o que você tem em mente. A gente responde com uma proposta pensada para o seu projeto.</p>
+    <div class="ctas ln"><a class="btn cheio" id="wa" target="_blank" rel="noopener" data-k="f3">Conversar pelo WhatsApp</a><a class="btn vazio" href="mailto:guzzsecco@koaworld.org" data-k="f4">Enviar e-mail</a></div>
+    <div class="contato"><span id="tel"></span><span>guzzsecco@koaworld.org</span></div></div>
 </section>
+</main>
 
-<!-- ===== FOOTER ===== -->
-<footer>
-  <div class="foot-brand">
-    <img src="koa-logo.webp" alt="KOA" />
-    <span style="font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)">Audiovisual</span>
+<!-- QUEM SOMOS (página separada) -->
+<main id="v-equipe" hidden>
+<section class="equipe">
+  <span class="pill"><i></i><span data-k="k0">Quem somos</span></span>
+  <h1 class="tt foco" data-k="k1">Quem Está por Trás</h1>
+  <p class="lead ln" data-k="k2">Um núcleo pequeno, que cuida de cada filme de perto, e uma rede de parceiros que entra quando o projeto pede.</p>
+  <div class="pess">
+    <div class="pp ln"><div class="foto"><img src="assets/equipe/guzz-secco.webp" alt="Guzz Secco" loading="lazy" style="object-position:50% 25%"></div>
+      <span class="fn" data-k="k3">Direção, roteiro e montagem</span><h3>Guzz Secco</h3>
+      <p data-k="k4">Fundador da KOA. Dirige, filma e monta. Também mantém um canal no YouTube onde publica filmes autorais e documentários sobre o trabalho interior, o mesmo olhar que leva para os projetos de marcas e artistas.</p>
+      <a class="btn vazio" href="https://www.youtube.com/@guzzsecco" target="_blank" rel="noopener" data-k="k5">▶ Ver o canal no YouTube</a></div>
+    <div class="pp ln"><div class="foto"><img src="assets/equipe/rosa-dragao.webp" alt="Rosa Dragão" loading="lazy" style="object-position:50% 25%"></div>
+      <span class="fn" data-k="k6">Sócia e co-criadora</span><h3>Rosa Dragão</h3>
+      <p data-k="k7">Co-criadora da KOA. Costuma ser a primeira conversa de cada projeto e acompanha o cliente do começo ao fim, com a escuta que dá nome ao nosso jeito de trabalhar.</p></div>
+    <div class="pp ln"><div class="foto"><img src="assets/equipe/martin-lepetach.webp" alt="Martin Lepetach" loading="lazy" style="object-position:50% 25%"></div>
+      <span class="fn" data-k="k8">Desenho de som e produção</span><h3>Martin Lepetach</h3>
+      <p data-k="k9">Desenhista de som e pesquisador. Cuida do que se ouve e de como o conteúdo chega pronto ao destino, com a atenção de quem sabe que o som muda o que a imagem faz sentir.</p></div>
   </div>
-  <div class="foot-copy">© 2026 KOA Audiovisual. Todos os direitos reservados.</div>
-</footer>
+  <div class="rede ln">
+    <h2 class="tt" data-k="kA">Uma Rede de Parceiros</h2>
+    <p data-k="kB">Ao redor do núcleo, trabalhamos com parceiros alinhados estrategicamente: produtoras, agências, diretores de fotografia, coloristas, músicos e técnicos de som. Cada projeto reúne a equipe do tamanho que ele pede, com gente que compartilha o mesmo cuidado.</p>
+  </div>
+  <div class="volta"><a class="btn cheio" href="#trabalhos" data-go="home" data-k="h3">Ver trabalhos</a><a class="btn vazio" href="#contato" data-go="home" data-k="n5">Conversar sobre um projeto</a></div>
+</section>
+</main>
 
-<!-- ===== VIDEO MODAL ===== -->
-<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Player de vídeo">
-  <div class="stage">
-    <button class="close" id="modalClose" aria-label="Fechar">
-      <span>Fechar</span>
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6 6 18"/></svg>
-    </button>
-    <iframe id="modalFrame" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-  </div>
+<footer><span class="logo" style="font-size:15px">KOA</span><span>© 2026 KOA Audiovisual · koaworld.org</span></footer>
 </div>
 
+<div class="player" id="player" aria-hidden="true"><span class="cb t"></span><span class="cb b"></span>
+  <button class="fecha" id="fecha" data-k="fe">Fechar ✕</button><div class="tela" id="tela"></div><div class="nome" id="pnome"></div></div>
+
 <script>
-  // -------- Mobile nav --------
-  const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('navLinks');
-  hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-    const isOpen = navLinks.classList.contains('open');
-    hamburger.innerHTML = isOpen
-      ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6 6 18"/></svg>'
-      : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>';
-  });
-  navLinks.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      hamburger.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>';
-    });
-  });
+const calmo=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const st=document.getElementById('stage');
 
-  // -------- Portfolio grid hover resize --------
-  const HOVER_SIZE = 5;
-  const NON_HOVER = (16 - HOVER_SIZE) / 3;
-  const grid = document.getElementById('grid');
-  const mq = window.matchMedia('(min-width: 769px)');
+/* ===== idiomas ===== */
+const T={
+en:{n1:"Work",n2:"Process",n4:"About us",n5:"Talk about a project",
+h0:"KOA Audiovisual",h1:"The Intelligence of Feeling",h2:"Films for projects that want to connect and be remembered long after the screen goes dark.",h3:"See our work",h4:"▶ Watch the demo reel",
+c0:"We have filmed for",c1:"City of Balneário Camboriú",
+m0:"The eye",m1:"Before the camera, we listen",m2:"Every project starts with a simple question: <strong>what does this story need to make someone feel?</strong>",m3:"Technique can be learned. A good camera can be rented. What changes a film is the eye of whoever decides where the light falls, how long a shot breathes and which silence stays in the cut.",m4:"That is the eye we bring to every project, from a real estate film to an artist’s music video.",m5:"— Emotion arrives first. Understanding comes later.",
+e1:"Stories that Connect",e2:"A story with a beginning, a middle and an end, told in a way people recognize as their own. That is what makes a film stay with you after the screen goes dark.",e3:"SENSITIVITY",e4:"A Cinematic Eye",e5:"Light, framing, rhythm and silence chosen for the emotion each scene asks for, shot by shot. The viewer may not be able to explain it, but they feel it.",
+o1:"Craft",o2:"From script to color grade: directing, cinematography, editing, color, sound design and motion, by the same team, with the same care.",
+p0:"Portfolio",p1:"Work",p2:"A selection of films made for brands, developments and artists, some on our own, others in partnership with agencies and production companies.",
+t1:"Corporate",t2:"Advertising",t3:"Real estate",t4:"Music videos",t5:"Original films",t6:"Real stories",t7:"Launches & fashion",t8:"Events & same day",
+pv:"PREVIEW",fz:"What we did",pa:"Partnership",mo:"Fashion",la:"Launch",md:"Same day",ev:"Event",
+i0:"Corporate · Hospitality",i1:"Cabins in the Santa Catarina highlands, shown through what you live there: morning mist, wine by candlelight, the silence of the forest.",i2:"The whole film, from idea to final grade",i3:"Food · Colombia",i4:"From script to delivery",i5:"Directing, cinematography and post",
+u0:"Advertising · Florianópolis",u1:"A brand told through the city it chose to live in.",u2:"Full film",u3:"Editing, color, sound and motion",u4:"Full post-production",u5:"City of Balneário Camboriú · camera and post",
+b0:"Films that let people imagine living, working or spending time there before their first visit.",b1:"Development · Investors",b2:"A development presented through the pace of life it offers.",b3:"From script to sound design",b4:"Full film",b5:"Residential",
+v0:"Music video",v1:"Txana Vake. A healing chant filmed with the respect it asks for.",v2:"From concept to color",
+a0:"Original film · Documentary",a1:"The Visionary Experience",a2:"The challenge of explaining the unexplainable: filming something that happens inside.",a3:"Signature",a4:"A film by Guzz Secco",a5:"Short film",a6:"Essay",
+r0:"Real people telling what they lived through. Here the camera listens more than it speaks.",r1:"Testimonials",r2:"North College Prep",r3:"Stories from people who went through one of the most decisive years of their lives.",r4:"Interviews, camera and editing",r5:"Cora Project",r6:"Social project",r7:"Tatá — The Potter",r8:"Documentary",
+l0:"Launch · Fashion",l1:"Raised in Oblivion. A collection launched as a film.",l2:"Directing and launch film",l3:"Camera, color, sound and motion",
+s0:"Events filmed with a cinematic eye. With same day, the film is edited and screened on the same day.",s1:"Event · Hospitality",s2:"New Year’s at the Majestic",s3:"New Year’s Eve at the Majestic Palace Hotel, told by the people who were there.",s4:"Coverage and the film of the night",s5:"Filmed and screened the same day",s6:"Real-time editing",s7:"Launch",
+w0:"For developers and real estate",w1:"Before the Floor Plan, the Life It Promises",w2:"A development is often remembered for the feeling it leaves: the morning light, the silence, the view from the balcony. We film that, for buyers and for investors.",w3:"See real estate films",
+d0:"Creative process",d1:"Bringing an Idea to Life",d2:"The AKAIKAME demo reel is about ideas born from the union of many minds and the collision between them. Studying, researching, making decisions, choosing every line, until the thing takes shape.",d3:"That is still how we work. Every project starts with room for the idea to mature, before any gear leaves its case.",
+q0:"Production process",q1:"From the First Coffee to Delivery",q2:"Listening",q3:"A conversation about the goal, the audience and what the film needs to stir.",q4:"Script & Pre-production",q5:"Script, shot list, locations, crew and schedule approved before the shoot.",q6:"Set",q7:"Shooting with cinematography, location sound and a crew sized to the project.",q8:"Post",q9:"Editing, color, sound design and motion, with agreed review rounds.",qa:"Delivery",qb:"Versions for every screen and format, on the agreed date.",
+g0:"For agencies and production companies",g1:"Partnership Projects",g2:"Much of our work has been done in partnership with agencies, production companies and partners. We join at the stage the project needs, with our eye and your name in front.",
+x1:"Directing",x2:"Script",x3:"Cinematography",x4:"Editing",x5:"Color",x6:"Sound design",
+j0:"From people we have worked with",j1:"“The understanding of the soul we were looking for in our project was captured in the best possible way.”",j2:"Gabriel No · Corporate film",
+f0:"Next scene",f1:"Let’s Tell Your Story",f2:"Tell us what you have in mind. We will reply with a proposal made for your project.",f3:"Message us on WhatsApp",f4:"Send an e-mail",fe:"Close ✕",
+k0:"About us",k1:"Who Is Behind It",k2:"A small core team that looks after every film up close, and a network of partners who join when the project calls for it.",ft:"photo coming soon",k3:"Directing, writing and editing",k4:"Founder of KOA. He directs, shoots and edits. He also runs a YouTube channel where he publishes original films and documentaries about inner work, the same eye he brings to projects for brands and artists.",k5:"▶ Visit the YouTube channel",k6:"Partner and co-creator",k7:"Co-creator of KOA. She is often the first conversation in each project and stays with the client from start to finish, with the kind of listening that names the way we work.",k8:"Sound design and production",k9:"Sound designer and researcher. He looks after what you hear and how the content reaches its destination ready, with the attention of someone who knows sound changes what an image makes you feel.",kA:"A Network of Partners",kB:"Around the core team, we work with strategically aligned partners: production companies, agencies, cinematographers, colorists, musicians and sound engineers. Each project brings together a crew sized to what it needs, made of people who share the same care."},
+es:{n1:"Trabajos",n2:"Proceso",n4:"Quiénes somos",n5:"Conversar sobre un proyecto",
+h0:"KOA Audiovisual",h1:"La Inteligencia del Sentir",h2:"Películas para proyectos que quieren conectar y ser recordados mucho más allá de la pantalla.",h3:"Ver trabajos",h4:"▶ Ver el demo reel",
+c0:"Hemos filmado para",c1:"Municipalidad de Balneário Camboriú",
+m0:"La mirada",m1:"Antes de la cámara, la escucha",m2:"Todo proyecto empieza con una pregunta simple: <strong>¿qué necesita esta historia hacer sentir a alguien?</strong>",m3:"La técnica se aprende. Una buena cámara se alquila. Lo que cambia una película es la mirada de quien decide dónde cae la luz, cuánto respira un plano y qué silencio queda en el montaje.",m4:"Esa es la mirada que llevamos a cada trabajo, desde la película de un emprendimiento hasta el videoclip de un artista.",m5:"— La emoción llega primero. El entendimiento viene después.",
+e1:"Narrativas que Conectan",e2:"Una historia con principio, desarrollo y final, contada de un modo que la persona reconoce como suya. Eso es lo que hace que una película se recuerde cuando la pantalla se apaga.",e3:"SENSIBILIDAD",e4:"Mirada de Cine",e5:"Luz, encuadre, ritmo y silencio elegidos para la emoción que pide cada escena, plano a plano. Quizás el espectador no sepa explicarlo, pero lo siente.",
+o1:"Oficio",o2:"Del guion al color: dirección, cámara, edición, color, diseño de sonido y motion, hechos por el mismo equipo, con el mismo cuidado.",
+p0:"Portafolio",p1:"Trabajos",p2:"Una selección de películas hechas para marcas, emprendimientos y artistas, algunas por cuenta propia, otras en alianza con agencias y productoras.",
+t1:"Institucionales",t2:"Publicidad",t3:"Inmobiliarias y emprendimientos",t4:"Videoclips",t5:"Películas de autor",t6:"Historias reales",t7:"Lanzamientos y moda",t8:"Eventos y same day",
+pv:"AVANCE",fz:"Lo que hicimos",pa:"Alianza",mo:"Moda",la:"Lanzamiento",md:"Mismo día",ev:"Evento",
+i0:"Institucional · Hotelería",i1:"Cabañas en la sierra de Santa Catarina, presentadas por lo que se vive allí: la niebla de la mañana, el vino a la luz de una vela, el silencio del bosque.",i2:"La película entera, de la idea al color final",i3:"Gastronomía · Colombia",i4:"Del guion a la entrega",i5:"Dirección, imagen y postproducción",
+u0:"Publicidad · Florianópolis",u1:"Una marca contada a través de la ciudad que eligió para vivir.",u2:"Película completa",u3:"Montaje, color, sonido y motion",u4:"Postproducción completa",u5:"Municipalidad de Balneário Camboriú · imagen y post",
+b0:"Películas que hacen que la persona se imagine viviendo, trabajando o pasando tiempo allí antes de la primera visita.",b1:"Emprendimiento · Inversionistas",b2:"Un emprendimiento presentado por el ritmo de vida que propone.",b3:"Del guion al diseño de sonido",b4:"Película completa",b5:"Residencial",
+v0:"Videoclip",v1:"Txana Vake. Un canto de sanación filmado con el respeto que pide.",v2:"Del concepto al color",
+a0:"Película de autor · Documental",a1:"La Experiencia Visionaria",a2:"El desafío de explicar lo inexplicable: filmar algo que sucede por dentro.",a3:"Firma",a4:"Una película de Guzz Secco",a5:"Cortometraje",a6:"Ensayo",
+r0:"Personas reales contando lo que vivieron. Aquí la cámara escucha más de lo que habla.",r1:"Testimonios",r2:"North Preuniversitario",r3:"Historias de quienes pasaron por uno de los años más decisivos de su vida.",r4:"Entrevistas, imagen y montaje",r5:"Proyecto Cora",r6:"Proyecto social",r7:"Tatá — El Alfarero",r8:"Documental",
+l0:"Lanzamiento · Moda",l1:"Raised in Oblivion. Una colección lanzada como película.",l2:"Dirección y película de lanzamiento",l3:"Imagen, color, sonido y motion",
+s0:"Eventos filmados con mirada de cine. En el same day, la película se edita y se proyecta el mismo día.",s1:"Evento · Hotelería",s2:"Año Nuevo en el Majestic",s3:"La noche de Año Nuevo del Majestic Palace Hotel, contada por las personas que estaban allí.",s4:"Cobertura y película de la noche",s5:"Filmado y proyectado el mismo día",s6:"Edición en tiempo real",s7:"Lanzamiento",
+w0:"Para inmobiliarias y emprendimientos",w1:"Antes del Plano, la Vida que Promete",w2:"Un emprendimiento suele recordarse por la sensación que deja: la luz de la mañana, el silencio, la vista desde el balcón. Eso es lo que filmamos, para el comprador y para el inversionista.",w3:"Ver películas inmobiliarias",
+d0:"Proceso creativo",d1:"Dar Vida a una Idea",d2:"El demo reel de AKAIKAME habla de ideas que nacen de la unión de varias mentes y del choque entre ellas. Estudiar, investigar, tomar decisiones, elegir cada trazo, hasta que la cosa toma forma.",d3:"Así seguimos trabajando hoy. Cada proyecto empieza con espacio para que la idea madure, antes de que cualquier equipo salga de su estuche.",
+q0:"Proceso de producción",q1:"Del Primer Café a la Entrega",q2:"Escucha",q3:"Una conversación sobre el objetivo, el público y lo que la película necesita provocar.",q4:"Guion y Preproducción",q5:"Guion, desglose, locaciones, equipo y cronograma aprobados antes del rodaje.",q6:"Rodaje",q7:"Filmación con dirección de fotografía, sonido directo y un equipo del tamaño del proyecto.",q8:"Post",q9:"Montaje, color, diseño de sonido y motion, con rondas de revisión acordadas.",qa:"Entrega",qb:"Versiones para cada pantalla y formato, en la fecha acordada.",
+g0:"Para agencias y productoras",g1:"Proyectos en Alianza",g2:"Buena parte de nuestro trabajo se hizo en alianza con agencias, productoras y socios. Entramos en la etapa que el proyecto necesita, con nuestra mirada y su nombre al frente.",
+x1:"Dirección",x2:"Guion",x3:"Cámara",x4:"Edición",x5:"Color",x6:"Diseño de sonido",
+j0:"Quienes ya trabajaron con nosotros",j1:"“La comprensión del alma que buscábamos para nuestro proyecto fue captada de la mejor manera posible.”",j2:"Gabriel No · Video institucional",
+f0:"Próxima escena",f1:"Contemos Tu Historia",f2:"Cuéntanos lo que tienes en mente. Te respondemos con una propuesta pensada para tu proyecto.",f3:"Escribir por WhatsApp",f4:"Enviar un e-mail",fe:"Cerrar ✕",
+k0:"Quiénes somos",k1:"Quién Está Detrás",k2:"Un núcleo pequeño que cuida cada película de cerca, y una red de socios que se suma cuando el proyecto lo pide.",ft:"foto próximamente",k3:"Dirección, guion y montaje",k4:"Fundador de KOA. Dirige, filma y monta. También tiene un canal de YouTube donde publica películas de autor y documentales sobre el trabajo interior, la misma mirada que lleva a los proyectos de marcas y artistas.",k5:"▶ Ver el canal de YouTube",k6:"Socia y cocreadora",k7:"Cocreadora de KOA. Suele ser la primera conversación de cada proyecto y acompaña al cliente de principio a fin, con la escucha que da nombre a nuestra forma de trabajar.",k8:"Diseño de sonido y producción",k9:"Diseñador de sonido e investigador. Cuida lo que se escucha y que el contenido llegue listo a su destino, con la atención de quien sabe que el sonido cambia lo que la imagen hace sentir.",kA:"Una Red de Socios",kB:"Alrededor del núcleo trabajamos con socios alineados estratégicamente: productoras, agencias, directores de fotografía, coloristas, músicos y técnicos de sonido. Cada proyecto reúne un equipo del tamaño que necesita, con personas que comparten el mismo cuidado."}};
+const CONTATO={pt:{tel:"(48) 99633-0043",wa:"5548996330043"},en:{tel:"+1 (332) 231-0337",wa:"13322310337"},es:{tel:"+55 48 99633-0043",wa:"5548996330043"}};
+const PT={};document.querySelectorAll('[data-k]').forEach(el=>{if(!(el.dataset.k in PT))PT[el.dataset.k]=el.innerHTML});
+function idioma(l){
+  const d=l==='pt'?PT:T[l];
+  document.querySelectorAll('[data-k]').forEach(el=>{const v=d[el.dataset.k];el.innerHTML=v!==undefined?v:PT[el.dataset.k]});
+  document.documentElement.lang={pt:'pt-BR',en:'en',es:'es'}[l];
+  document.querySelectorAll('#lang button').forEach(b=>b.classList.toggle('on',b.dataset.l===l));
+  document.getElementById('tel').textContent=CONTATO[l].tel;
+  document.getElementById('wa').href='https://wa.me/'+CONTATO[l].wa;
+  try{localStorage.setItem('koa-av-lang',l)}catch(e){}
+}
+document.getElementById('lang').addEventListener('click',e=>{const b=e.target.closest('button');if(b)idioma(b.dataset.l)});
+let l0='pt';try{l0=localStorage.getItem('koa-av-lang')||'pt'}catch(e){}
+const hl=location.hash.slice(1);if(hl==='en'||hl==='es'||hl==='pt')l0=hl;
+idioma(T[l0]||l0==='pt'?l0:'pt');
 
-  function applySizes(row, col) {
-    const rows = [1,2,3,4].map(r => r === row ? HOVER_SIZE+'fr' : NON_HOVER+'fr').join(' ');
-    const cols = [1,2,3].map(c => c === col ? HOVER_SIZE+'fr' : NON_HOVER+'fr').join(' ');
-    grid.style.gridTemplateRows = rows;
-    grid.style.gridTemplateColumns = cols;
-  }
-  function resetSizes() {
-    grid.style.gridTemplateRows = '1fr 1fr 1fr 1fr';
-    grid.style.gridTemplateColumns = '1fr 1fr 1fr';
-  }
+/* ===== entrada ao rolar ===== */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.2});
+document.querySelectorAll('.foco,.ln,#etapas').forEach(el=>{
+  if(calmo){el.classList.add('in');return}
+  if(el.classList.contains('ln')){const irm=[...el.parentElement.querySelectorAll(':scope>.ln')];el.style.transitionDelay=(irm.indexOf(el)*.15)+'s'}
+  io.observe(el)});
 
-  [...grid.children].forEach(el => {
-    const style = el.getAttribute('style') || '';
-    const row = parseInt((style.match(/grid-row:\s*(\d)/) || [])[1], 10);
-    const col = parseInt((style.match(/grid-column:\s*(\d)/) || [])[1], 10);
-    if (!row || !col) return;
-    el.addEventListener('mouseenter', () => { if (mq.matches) applySizes(row, col); });
-    el.addEventListener('mouseleave', () => { if (mq.matches) resetSizes(); });
-  });
+/* ===== prévias: só tocam quando visíveis ===== */
+const vids=document.querySelectorAll('.scr video');
+const vo=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting&&!calmo){v.play().catch(()=>{})}else{v.pause()}}),{threshold:.4});
+vids.forEach(v=>vo.observe(v));
 
-  // -------- Video modal --------
-  const modal = document.getElementById('modal');
-  const modalFrame = document.getElementById('modalFrame');
-  const modalClose = document.getElementById('modalClose');
+/* ===== abas com chicote de câmera ===== */
+const tabs=document.getElementById('tabs');
+function abrirAba(t){
+  const atual=document.querySelector('.painel:not([hidden])'),novo=document.querySelector('.painel[data-p="'+t+'"]');
+  tabs.querySelectorAll('button').forEach(x=>x.classList.toggle('on',x.dataset.t===t));
+  const btn=tabs.querySelector('[data-t="'+t+'"]');tabs.scrollTo({left:btn.offsetLeft-20,behavior:calmo?'auto':'smooth'});
+  if(!novo||novo===atual)return;
+  const mostra=()=>{if(atual){atual.hidden=true;atual.classList.remove('sai')}novo.hidden=false;
+    novo.querySelectorAll('.foco,.ln').forEach(x=>x.classList.add('in'));
+    if(!calmo){novo.classList.remove('entra');void novo.offsetWidth;novo.classList.add('entra')}
+    vids.forEach(v=>{if(v.closest('.painel').hidden)v.pause();else{vo.unobserve(v);vo.observe(v)}})};
+  if(calmo||!atual){mostra();return}
+  atual.classList.add('sai');setTimeout(mostra,230);
+}
+tabs.addEventListener('click',e=>{const b=e.target.closest('button');if(b)abrirAba(b.dataset.t)});
+document.querySelectorAll('[data-ir]').forEach(b=>b.addEventListener('click',()=>{abrirAba(b.dataset.ir);document.getElementById('trabalhos').scrollIntoView({behavior:calmo?'auto':'smooth'})}));
 
-  function openModal(platform, id) {
-    let src = '';
-    if (platform === 'vimeo') {
-      src = `https://player.vimeo.com/video/${id}?autoplay=1&title=0&byline=0&portrait=0&dnt=1`;
-    } else if (platform === 'youtube') {
-      src = `https://www.youtube.com/embed/${id}?autoplay=1&rel=0&modestbranding=1`;
-    }
-    modalFrame.src = src;
-    modal.classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeModal() {
-    modal.classList.remove('open');
-    modalFrame.src = '';
-    document.body.style.overflow = '';
-  }
-  document.querySelectorAll('.cell').forEach(cell => {
-    cell.addEventListener('click', () => {
-      const id = cell.dataset.videoId;
-      const platform = cell.dataset.platform;
-      if (id && platform) openModal(platform, id);
-    });
-  });
-  modalClose.addEventListener('click', closeModal);
-  modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+/* ===== páginas: início × quem somos ===== */
+const vh=document.getElementById('v-home'),ve=document.getElementById('v-equipe'),gav=document.getElementById('gaveta');
+document.getElementById('menu').onclick=()=>{gav.hidden=!gav.hidden};
+function irPara(view,alvo){
+  gav.hidden=true;
+  const trocou=(view==='equipe')!==vh.hidden;
+  vh.hidden=view==='equipe';ve.hidden=view!=='equipe';
+  if(view==='equipe'){ve.querySelectorAll('.foco,.ln').forEach(x=>x.classList.add('in'));vids.forEach(v=>v.pause())}
+  const el=alvo&&document.querySelector(alvo);
+  if(el&&view==='home'){el.scrollIntoView({behavior:trocou||calmo?'auto':'smooth'})}else{st.scrollIntoView({behavior:'auto'})}
+}
+document.querySelectorAll('[data-go]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();irPara(a.dataset.go,a.getAttribute('href'))}));
+if(location.hash==='#equipe')irPara('equipe');
 
-  // -------- Scroll fade-in --------
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+/* ===== player em tela cheia com barras de cinema ===== */
+const pl=document.getElementById('player'),tela=document.getElementById('tela'),pn=document.getElementById('pnome');
+function tocar(el){
+  const yt=el.dataset.yt,vm=el.dataset.vm;if(!yt&&!vm)return;
+  const src=yt?'https://www.youtube-nocookie.com/embed/'+yt+'?autoplay=1&rel=0&modestbranding=1':'https://player.vimeo.com/video/'+vm+'?autoplay=1&title=0&byline=0&portrait=0';
+  tela.innerHTML='<iframe src="'+src+'" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
+  pn.textContent=el.dataset.nome||'';pl.classList.add('on');pl.setAttribute('aria-hidden','false');vids.forEach(v=>v.pause());
+}
+function fechar(){pl.classList.remove('on');pl.setAttribute('aria-hidden','true');setTimeout(()=>{tela.innerHTML=''},calmo?0:450)}
+document.addEventListener('click',e=>{const el=e.target.closest('[data-yt],[data-vm]');if(el&&!pl.contains(el))tocar(el)});
+document.getElementById('fecha').onclick=fechar;
+pl.addEventListener('click',e=>{if(e.target===pl)fechar()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')fechar()});
 
-  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+/* ===== timecode do REC ===== */
+const tc=document.getElementById('tc');let f=14*24+8;
+if(!calmo)setInterval(()=>{f++;const s=Math.floor(f/24),q=f%24,p=n=>String(n).padStart(2,'0');tc.textContent='00:'+p(Math.floor(s/60))+':'+p(s%60)+':'+p(q)},1000/24);
+else tc.textContent='00:00:14:08';
 </script>
-
-</body>
-</html>
+</body></html>
