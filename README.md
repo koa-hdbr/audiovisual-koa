@@ -13,19 +13,15 @@ Site institucional **KOA Audiovisual** — produção audiovisual em Santa Catar
 
 ```
 site/
-├─ index.html           # SPA single-page
-├─ favicon.png
-├─ koa-logo.webp
+├─ index.html           # página única; #en, #es e #equipe abrem inglês, espanhol e Quem somos
+├─ favicon.ico  favicon.png  favicon-32.png  apple-touch-icon.png
+├─ og-image.jpg         # prévia no WhatsApp e nas redes
 ├─ robots.txt
 ├─ sitemap.xml
-└─ depoimentos/         # mídia: vídeos MP4 + áudios OGG
-   ├─ video1.mp4
-   ├─ video2.mp4
-   ├─ sitio1.ogg
-   ├─ sitio2.ogg
-   ├─ sitio3.ogg
-   └─ greenbarn.ogg
+└─ assets/              # capas, vídeos de prévia .mp4 e fotos da equipe
 ```
+
+Fontes do Google Fonts; filmes completos em player do YouTube (youtube-nocookie.com) e do Vimeo. Se houver CSP, liberar os dois em `frame-src`.
 
 ## Rodar local
 
